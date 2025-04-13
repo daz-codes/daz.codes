@@ -1,7 +1,25 @@
+h1.logo .daz{
+  font-size: 5rem;
+}
+
+h1.logo .codes{
+  position: relative;
+  left: -8px;
+  top: 12px;
+  letter-spacing: -0.1em;
+  font-weight: bold;
+}
+
 img.daz {
   max-width: 200px;
   border-radius: 50%;
   display: block;
   margin: 0 auto;
   border: 8px solid #efefef;
+}
+
+header.daz{ 
+  background-image: 
+  linear-gradient(to bottom, #d8b8e9, #fff);
+
 }
