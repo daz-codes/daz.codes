@@ -1,11 +1,14 @@
 h1.logo .daz{
+  position: relative;
+  left: 1em;
   font-size: 5rem;
+  color: #9800ff;
 }
 
 h1.logo .codes{
   position: relative;
-  left: -8px;
-  top: 12px;
+  left: -1em;
+  top: 0.6em;
   letter-spacing: -0.1em;
   font-weight: bold;
 }
@@ -16,10 +19,4 @@ img.daz {
   display: block;
   margin: 0 auto;
   border: 8px solid #efefef;
-}
-
-header.daz{ 
-  background-image: 
-  linear-gradient(to bottom, #d8b8e9, #fff);
-
 }
