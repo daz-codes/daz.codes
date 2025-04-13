@@ -1,4 +1,4 @@
-<img src="/images/daz.webp" alt="A picture of me" class="daz">
+<img src="/images/daz.webp" alt="A picture of me" class="daz dropshadow">
 
 👋 Hey, I'm Daz, a software developer with a passion for problem solving.
 
