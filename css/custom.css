@@ -1,16 +1,15 @@
 h1.logo .daz{
-  position: relative;
-  left: 1em;
   font-size: 5rem;
   color: #9800ff;
+  margin: 0;
 }
 
 h1.logo .codes{
-  position: relative;
-  left: -1em;
-  top: 0.6em;
+  margin: 0;
+  margin-top: -0.3em;
   letter-spacing: -0.1em;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 img.daz {
