@@ -1,15 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Codystar&display=swap');
+
+:root {
+--brand-font: "Boldonse";
+}
+
+
 h1.logo .daz{
-  font-size: 5rem;
-  color: #9800ff;
+  font-family: "Boldonse";
+  font-size: 4rem;
+  letter-spacing: 0.1em;
   margin: 0;
 }
 
 h1.logo .codes{
-  margin: 0;
-  margin-top: -0.3em;
+  font-size: 0.8em;
   letter-spacing: -0.1em;
   font-weight: bold;
-  text-transform: uppercase;
+  text-transform: lowercase;
+  position: relative;
+  top: -0.6em;
+  left: -0.3em;
 }
 
 img.daz {
