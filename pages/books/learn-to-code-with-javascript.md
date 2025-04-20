@@ -1,37 +1,16 @@
 ---
-title: About Swifty
-number: 29
+summary: The perfect place to learn how to code using the most popular programming language on Earth!
 tags:
-  - swifty
-  - about
+  - javascript
+  - coding
+  - books
 ---
 
-Swifty is the next generation of static site generator.
+![Learn To Code With JavaScript](/images/learn-to-code.jpg)
 
-It makes it really simple to create a full website that loads pages almost instantly.
 
-## Quick Start
+This easy-to-follow, practical, and fun guide is the perfect place to start on your coding journey. 
 
-#### 1. Install Swifty:
+You'll be learning to program with JavaScript - the most popular programming language on Earth. And it runs in web browsers, making it particularly suited to creating web-based apps and games. 
 
-```bash
-npm install swifty
-```
-
-#### 2. Start a new project:
-
-```
-npm swifty
-```
-
-#### 3. Add some more pages to the 'pages' folder (just write them in Markdown).
-
-#### 4. Start the server:
-
-```
-npm start
-```
-
-Visit [localhost:3000](http://localhost:3000/) to see your site in action.
-
-#### 5. [Learn More](/docs) about all the other features, including layouts, partials and front-matter configuration.
+But the principles and techniques that you'll learn will provide you with a foundation to go on and learn many other languages, too.

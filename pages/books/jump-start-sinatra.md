@@ -1,64 +1,18 @@
 ---
-title: Swifty Development Roadmap
+summary: A short introduction to Sinatra, the micro Ruby framework
 tags:
-  - future
-  - wishlist
-  - roadmap
+  - ruby
+  - sinatra
+  - books
 ---
 
-## Automatic Code Highlighting
+![Jump Start Sinatra](/images/jump-start-sinatra.jpg)
 
-```javascript
-const test = 11
-[1,2,3].map(x => x * test)
-```
+This short SitePoint book provides readers with a fun and yet practical introduction to Sinatra, a framework that makes web development with Ruby extremely simple. 
 
-A little bit of Ruby ...
+The book is built around building a real-life example project in a fun and easily understandable and practical way. 
 
-```
-class Blog < ActiveRecord
+This is a clear, approachable and very easy-to-follow book that will get you to to speed with Sinatra in no time.
 
-has_many :posts
-
-end
-
-```
-
-## Add full Tutorial
-
-On About page
-
-Build full site and use every feature.
-
-## Pagination
-
-Have a setting for the number of pages per index and construct pages.
-
-## Only Build Files That Have Changed
-
-Check which files have changed and only build those.
-
-## Hot Reloading
-
-Use Hotwire Spark or something similar to instroduce hot reloading.
-
-## Make Code modular
-
-Separate into different files
-
-## CLI
-
-Allow choice of `dist` folder
-Build script that creates the files
-Watch mode
-
-
-## Templating Languages
-
-Include support for using Liquid
-
-## Searching
-
-Add search functinality to search for pages.
 
 
