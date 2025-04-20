@@ -1,6 +1,6 @@
-<img src="/images/daz.webp" alt="A picture of me" class="daz dropshadow">
-
 <p class="display-m">👋 Hey!</p>
+
+<img src="/images/daz.webp" alt="A picture of me" class="daz dropshadow">
 
 I'm Daz, a software developer with a passion for problem solving.
 
