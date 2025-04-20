@@ -51,7 +51,7 @@ img.daz {
   border-radius: 50%;
   display: block;
   margin: 0 auto;
-  border: 8px solid #efefef;
+  border: 8px solid var(--daz-blue);
 }
 
 img{
