@@ -1,5 +1,6 @@
 ---
 summary: A fun, practical, and comprehensive guide to the modern usage of programming language of the web
+postition: 2
 tags:
   - books
   - javascript

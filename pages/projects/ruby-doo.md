@@ -1,5 +1,7 @@
 ---
 summary: A small utility library that helps make JavaScript do more Ruby.
+position: 4
+tags:
   - ruby
   - javascript
   - rubydoobydoo

@@ -1,5 +1,7 @@
 ---
 summary: A tiny state library for building reactive UI.
+position: 5
+tags:
   - state
   - javascript
   - projects

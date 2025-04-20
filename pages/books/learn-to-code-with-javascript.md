@@ -1,5 +1,6 @@
 ---
 summary: The perfect place to learn how to code using the most popular programming language on Earth!
+position: 3
 tags:
   - javascript
   - coding

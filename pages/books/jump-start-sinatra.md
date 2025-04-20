@@ -1,5 +1,6 @@
 ---
 summary: A short introduction to Sinatra, the micro Ruby framework
+position: 1
 tags:
   - ruby
   - sinatra

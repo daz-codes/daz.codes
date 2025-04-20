@@ -1,5 +1,7 @@
 ---
 summary: Adds registration pages and some extra methods to the built-in authentication generator.
+position: 3
+tags:
   - ruby
   - rails
   - authentication

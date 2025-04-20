@@ -1,6 +1,6 @@
 ---
 summary: A microframework inspired by Stimulus and using data-attributes to add React-like reactivity to HTML but maintaining vanilla HTML and simple declarative syntax.
-
+position: 2
 tags:
   - projects
   - javascript
