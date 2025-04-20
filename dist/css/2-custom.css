@@ -27,6 +27,10 @@ h1.logo .daz{
   margin: 0;
 }
 
+h1.log:hover{
+  opacity: 0.8;
+}
+
 h1.logo .codes{
   font-size: 0.8em;
   font-weight: bold;

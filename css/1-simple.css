@@ -103,18 +103,19 @@
   @media (prefers-color-scheme: dark) {
     :root {
       color-scheme: dark;
-      --bg: var(--black);
-      --dropshadow: rgba(0,0,0,0.42);
-      --accent-bg: var(--midnight);
-      --highlight: rgba(255,255,255,0.05);
-      --text: var(--lightGrey);
-      --text-light: var(--grey);
-      --primary: var(--pink);
-      --primary-hover: var(--yellow);
-      --secondary: var(--aqua);
+      --bg: #fff;
+      --accent-bg: #ccedf5;
+      --highlight: rgba(0,0,0,0.05);
+      --text: var(--carbon);
+      --text-light: var(--darkGrey);
+      --border: var(--gray);
+      --primary: var(--blue);
+      --secondary: var(--slate);
+      --primary-hover: var(--pink);
       --accent-text: var(--bg);
-      --preformatted: var(--lightGrey);
-      --disabled: var(--black);
+      --preformatted: var(--graphite);
+      --marked: var(--yellow);
+      --disabled: var(--offWhite);
     }
     /* Add a bit of transparency so light media isn't so glaring in dark mode */
     img,

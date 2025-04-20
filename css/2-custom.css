@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Codystar&display=swap');
 
 :root {
+  --daz-blue: #0f4c82;
   --brand-font: "Boldonse";
   --hdr-gradient: radial-gradient(
     farthest-corner circle at -30% 11% in oklch,
@@ -20,20 +21,26 @@ body > header,body,body >footer{
 
 
 h1.logo .daz{
-  color: #0f4c82;
+  color: var(--daz-blue);
   font-family: "Boldonse";
   font-size: 4rem;
   letter-spacing: 0.1em;
   margin: 0;
 }
 
+
 h1.logo .codes{
+  color: var(--blue);
   font-size: 0.8em;
   font-weight: bold;
   text-transform: lowercase;
   position: relative;
   top: -0.6em;
   left: -0.3em;
+}
+
+h1.logo .codes:hover{
+  color: var(--purple);
 }
 
 h1.logo a{
