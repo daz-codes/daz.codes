@@ -1,37 +1,26 @@
 ---
-title: About Swifty
-number: 29
+summary: A microframework inspired by Stimulus and using data-attributes to add React-like reactivity to HTML but maintaining vanilla HTML and simple declarative syntax.
+
 tags:
-  - swifty
-  - about
+  - projects
+  - javascript
+  - surge
 ---
 
-Swifty is the next generation of static site generator.
+# Surge
 
-It makes it really simple to create a full website that loads pages almost instantly.
+Surge is a tiny, ultra-lightweight JavaScript library that adds a surge of reactivity to your HTML — all in just 1kb (minified and gzipped).
 
-## Quick Start
+No virtual DOM. No build step. No dependencies. Just drop it in and go.
 
-#### 1. Install Swifty:
+Ever wonder why it takes 50kb of JavaScript, a virtual DOM, and a mountain of boilerplate just to build a counter?
 
-```bash
-npm install swifty
-```
+With Surge, it doesn’t.
 
-#### 2. Start a new project:
+Surge embraces the simplicity of the web and the power of HTML-first development. It supercharges your HTML with a sprinkle of declarative magic using data-* attributes — no JSX, no diffing and no dependencies. Just clean, semantic HTML — with a surge of reactiviey.
 
-```
-npm swifty
-```
+⚡️ Two-way binding — Update your data or your UI, and both stay in sync ⚡️ Action binding with parameters — Easily wire logic to events like click, input, or submit ⚡️ LocalStorage support — Persist state with zero config ⚡️ Reactive HTML insertion — Dynamically add content and Surge wires it up automatically
 
-#### 3. Add some more pages to the 'pages' folder (just write them in Markdown).
+Surge doesn't fight the browser — it works with it. HTML is your template and JavaScript is your logic. Surge brings them together in a powerful way then gets out of your way to let you build. And it's so small you'll hardly even know it's there.
 
-#### 4. Start the server:
-
-```
-npm start
-```
-
-Visit [localhost:3000](http://localhost:3000/) to see your site in action.
-
-#### 5. [Learn More](/docs) about all the other features, including layouts, partials and front-matter configuration.
+Surge is built with simplicity in mind. Whether you’re prototyping, enhancing a static site, or building a micro-app, Surge gives you the power to be productive — without the weight of a full framework.

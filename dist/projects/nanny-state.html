@@ -2,38 +2,33 @@
 <turbo-frame id="content">
   <head><title>Nanny State || DAZ Codes</title></head>
   
-  <section class="container text-center no-margin">
-    <h1 class="display-l fancy-font logo no-margin">DAZ Codes</h1>
-    <div class="gradient-text display-s text-center margin-y">Super Speedy Static Site Generator!</div>
-</section>
+  <h1>Nanny State</h1>
+<p>NANNY STATE is a small reactive state library that makes it simple to build speedy web apps.</p>
+<p>It does everything React does, but without the build process, JSX or a virutal DOM ... and it&#39;s a fraction of the size!</p>
+<p>SMALL - less than 4kb minified and zipped
+SIMPLE - a single state object with some useful helper methods
+SPEEDY - automatic page renders that are blazingly fast</p>
+<p>It uses a purely declarative notation and everything is written in Vanilla JS and HTML. To get started, just set the initial state and write the view - check out the example below:</p>
+<pre><code class="hljs language-javascript"><span class="hljs-comment">// A single import is all that&#x27;s needed</span>
+<span class="hljs-keyword">import</span> <span class="hljs-title class_">Nanny</span> <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;nanny-state&quot;</span>
 
-<div class="align-center gap-s">
-    <a class="button" href="/about">Get Started</a>
-    <a class="button" href="/docs">Learn Swifty</a>
-</div>
+<span class="hljs-comment">// View is a tag function that accepts the state as a parameter and returns plain old HTML</span>
+<span class="hljs-keyword">const</span> <span class="hljs-title function_">View</span> = state =&gt; state.<span class="hljs-property">HTML</span><span class="hljs-string">`
+  &lt;h1&gt;❤️ <span class="hljs-subst">${state.count}</span>&lt;/h1&gt;
+  &lt;div&gt;
+    &lt;button onclick=<span class="hljs-subst">${event =&gt; state.Decrement(<span class="hljs-string">&quot;count&quot;</span>)}</span>&gt;👎&lt;/button&gt;
+    &lt;button onclick=<span class="hljs-subst">${event =&gt; state.Increment(<span class="hljs-string">&quot;count&quot;</span>)}</span>&gt;👍&lt;/button&gt;
+  &lt;/div&gt;`</span>
 
+<span class="hljs-comment">// the initial State is just a plain old object </span>
+<span class="hljs-keyword">const</span> <span class="hljs-title class_">State</span> = { 
+  <span class="hljs-attr">count</span>: <span class="hljs-number">0</span>, 
+  <span class="hljs-title class_">View</span>
+}
 
-<section class="highlight container text-center">
-
-<h2>Create a Website in No Time!</h2>
-<p>Swifty is the next generation of static site generator. It lets you write all your content in MarkDown and then builds the whole site based on your folder structure with pretty urls and super fast navigation.</p>
-<p><img src="/images/lights.webp" alt="Hazy Lights"></p>
-</section>
-
-<section class="container text-center">
-
-<h2>Super Flexible</h2>
-<p>You can conditionally add layouts to pages as well as using partials for content that is created. Pages can dynamically insert data into the content using front matter notation.</p>
-<p><img src="/images/code-example.webp" alt="Raspberries"></p>
-</section>
-
-<section class="highlight container text-center">
-
-<h2>Extra Features</h2>
-<p>Swifty includes lots of extra features to make site creation simple:</p>
-<p>Tags and tag links are automatically generated, helper methods can be used to add breadcrumb links and site navigation, custom CSS and JS is automatically added to the site</p>
-<p><img src="/images/helper-methods.webp" alt="Horizon"></p>
-</section>
+<span class="hljs-comment">// Start the Nanny State!</span>
+<span class="hljs-title class_">Nanny</span>(<span class="hljs-title class_">State</span>)
+</code></pre>
   
 </turbo-frame>
   

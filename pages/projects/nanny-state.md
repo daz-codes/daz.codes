@@ -1,42 +1,41 @@
-<section class="container text-center no-margin">
-    <h1 class="display-l fancy-font logo no-margin">{{sitename}}</h1>
-    <div class="gradient-text display-s text-center margin-y">Super Speedy Static Site Generator!</div>
-</section>
+---
+summary: A tiny state library for building reactive UI.
+  - state
+  - javascript
+  - projects
+---
 
-<div class="align-center gap-s">
-    <a class="button" href="/about">Get Started</a>
-    <a class="button" href="/docs">Learn Swifty</a>
-</div>
+# Nanny State
 
+NANNY STATE is a small reactive state library that makes it simple to build speedy web apps.
 
-<section class="highlight container text-center">
+It does everything React does, but without the build process, JSX or a virutal DOM ... and it's a fraction of the size!
 
-## Create a Website in No Time!
+SMALL - less than 4kb minified and zipped
+SIMPLE - a single state object with some useful helper methods
+SPEEDY - automatic page renders that are blazingly fast
 
-Swifty is the next generation of static site generator. It lets you write all your content in MarkDown and then builds the whole site based on your folder structure with pretty urls and super fast navigation.
+It uses a purely declarative notation and everything is written in Vanilla JS and HTML. To get started, just set the initial state and write the view - check out the example below:
 
-![Hazy Lights](/images/lights.jpg)
+```javascript
+// A single import is all that's needed
+import Nanny from "nanny-state"
 
-</section>
+// View is a tag function that accepts the state as a parameter and returns plain old HTML
+const View = state => state.HTML`
+  <h1>❤️ ${state.count}</h1>
+  <div>
+    <button onclick=${event => state.Decrement("count")}>👎</button>
+    <button onclick=${event => state.Increment("count")}>👍</button>
+  </div>`
 
-<section class="container text-center">
+// the initial State is just a plain old object 
+const State = { 
+  count: 0, 
+  View
+}
 
-## Super Flexible
+// Start the Nanny State!
+Nanny(State)
+```
 
-You can conditionally add layouts to pages as well as using partials for content that is created. Pages can dynamically insert data into the content using front matter notation.
-
-![Raspberries](/images/code-example.jpg)
-
-</section>
-
-<section class="highlight container text-center">
-
-## Extra Features
-
-Swifty includes lots of extra features to make site creation simple:
-
-Tags and tag links are automatically generated, helper methods can be used to add breadcrumb links and site navigation, custom CSS and JS is automatically added to the site
-
-![Horizon](/images/helper-methods.jpg)
-
-</section>

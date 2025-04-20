@@ -1,64 +1,28 @@
 ---
-title: Swifty Development Roadmap
-tags:
-  - future
-  - wishlist
-  - roadmap
+summary: A small utility library that helps make JavaScript do more Ruby.
+  - ruby
+  - javascript
+  - rubydoobydoo
+  - projects
 ---
 
-## Automatic Code Highlighting
+# Ruby Doo
+
+Ruby Doo was born out of my love for Ruby and frustration with JavaScript’s limited native methods. So I built my own utility library — not just as a fix, but as a fun way to bring Ruby’s elegance to the browser.
+
+Unashamedly monkey patching JS numbers, strings, arrays and objects with Ruby methods.
+
+Ruby has loads of really nice methods, now you can use them in JS as well!
+
+Write code like:
 
 ```javascript
-const test = 11
-[1,2,3].map(x => x * test)
+[1,2,3].last // 3
+[1,2,3].count // 3 
+(21).ordinalize // "21st"
+"Rubydoobydoo".reverse //m "oodyboodybuR"
+[1,2,3].sum.squared // 9
+["A","A","C","A","B","A","B"].tally // {"A": 4, "C": 1, "B": 2}
 ```
 
-A little bit of Ruby ...
-
-```
-class Blog < ActiveRecord
-
-has_many :posts
-
-end
-
-```
-
-## Add full Tutorial
-
-On About page
-
-Build full site and use every feature.
-
-## Pagination
-
-Have a setting for the number of pages per index and construct pages.
-
-## Only Build Files That Have Changed
-
-Check which files have changed and only build those.
-
-## Hot Reloading
-
-Use Hotwire Spark or something similar to instroduce hot reloading.
-
-## Make Code modular
-
-Separate into different files
-
-## CLI
-
-Allow choice of `dist` folder
-Build script that creates the files
-Watch mode
-
-
-## Templating Languages
-
-Include support for using Liquid
-
-## Searching
-
-Add search functinality to search for pages.
-
-
+## Ruby Dooby Doo!

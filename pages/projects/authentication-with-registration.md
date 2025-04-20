@@ -1,64 +1,10 @@
 ---
-title: Swifty Development Roadmap
-tags:
-  - future
-  - wishlist
-  - roadmap
+summary: Adds registration pages and some extra methods to the built-in authentication generator.
+  - ruby
+  - rails
+  - authentication
 ---
 
-## Automatic Code Highlighting
+# Authentication With Registration Generator Gem
 
-```javascript
-const test = 11
-[1,2,3].map(x => x * test)
-```
-
-A little bit of Ruby ...
-
-```
-class Blog < ActiveRecord
-
-has_many :posts
-
-end
-
-```
-
-## Add full Tutorial
-
-On About page
-
-Build full site and use every feature.
-
-## Pagination
-
-Have a setting for the number of pages per index and construct pages.
-
-## Only Build Files That Have Changed
-
-Check which files have changed and only build those.
-
-## Hot Reloading
-
-Use Hotwire Spark or something similar to instroduce hot reloading.
-
-## Make Code modular
-
-Separate into different files
-
-## CLI
-
-Allow choice of `dist` folder
-Build script that creates the files
-Watch mode
-
-
-## Templating Languages
-
-Include support for using Liquid
-
-## Searching
-
-Add search functinality to search for pages.
-
-
+ After giving a talk on the new Authentication Generator in Rails 8 and how to add registration pages, I wrapped up my code into a Ruby Gem (my first one!)
