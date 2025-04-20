@@ -14,11 +14,15 @@
 
   background: var(--hdr-gradient);
 }
-
-body > header,body,body >footer{
+body,body >footer{
   background: transparent;
 }
 
+
+body > header {
+  background: rgba(255,255,255,0.2);
+  display: flow-root;
+}
 
 h1.logo .daz{
   color: var(--daz-blue);
