@@ -3,17 +3,16 @@
 :root {
   --daz-blue: #0f4c82;
   --brand-font: "Boldonse";
-  --radial-gradient: radial-gradient(
-farthest-corner circle at -24% -21%,
-#ff3ab6 0%, 6%, #feac5e 11% 15%, #c779d0 18% 21%, #4bc0c8, #fff 50% 46%, 100%, #fff 100% 60%
+  --hdr-gradient: radial-gradient(
+    farthest-corner circle at -30% 11% in oklch,
+    oklch(80% 0.30 0) 0%, 26%, oklch(100% 0.00 217) 50% 46%, 100%, oklch(100% 0 256) 100% 60%
   );
 
-  background: var(--radial-gradient);
+  background: var(--hdr-gradient);
 }
 body,body >footer{
   background: transparent;
 }
-
 
 body > header {
   background: rgba(255,255,255,0.2);
@@ -24,7 +23,7 @@ body > header {
 h1.logo .daz{
   color: var(--daz-blue);
   font-family: "Boldonse";
-  font-size: 3rem;
+  font-size: 4rem;
   letter-spacing: 0.1em;
   margin: 0;
 }
@@ -32,7 +31,7 @@ h1.logo .daz{
 
 h1.logo .codes{
   color: var(--blue);
-  font-size: 0.6em;
+  font-size: 0.8em;
   font-weight: bold;
   text-transform: lowercase;
   position: relative;
