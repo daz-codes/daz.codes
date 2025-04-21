@@ -17,21 +17,25 @@ body,body >footer{
 body > header {
   background: rgba(255,255,255,0.2);
   display: flow-root;
-  border-bottom: 3px solid rgba(255,255,255,0.4);
+  border-bottom: 3px solid rgba(255,255,255,0.3);
+}
+
+h1.logo{
+  margin: 0;
+  padding: 0.2em;
 }
 
 h1.logo .daz{
   color: var(--daz-blue);
   font-family: "Boldonse";
-  font-size: 4rem;
+  font-size: 2rem;
   letter-spacing: 0.1em;
-  margin: 0;
 }
 
 
 h1.logo .codes{
   color: var(--blue);
-  font-size: 0.8em;
+  font-size: 0.4em;
   font-weight: bold;
   text-transform: lowercase;
   position: relative;

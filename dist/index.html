@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/monokai-sublime.min.css">
 </head>
 <body>
-  <header>
+  <header class="sticky">
       <h1 class="logo text-center"><a href="/" title="home"><span class="daz">DAZ</span><span class="codes mono-font">&lt;/codes&gt;</span></a></h1>
   </header>
     <main class="container text-center">
@@ -24,8 +24,8 @@
 
 <p>I&#39;m Daz, a software developer with a passion for problem solving.</p>
 <p>I love coding in Ruby and JavaScript and enjoy building things in Rails.</p>
-<p>Here&#39;s a list of <a href="/projects">my projects</a></p>
-<p>And here are some <a href="/books">books I wrote</a></p>
+<p>Here&#39;s a list of <a href="/projects.html" data-turbo-frame="content" data-turbo-action="advance">my projects</a></p>
+<p>And here are some <a href="/books.html" data-turbo-frame="content" data-turbo-action="advance">books I wrote</a></p>
 
   
 </turbo-frame>
@@ -58,13 +58,6 @@
         window.history.pushState({}, "", newPath);
       }
     }
-    document.querySelectorAll('#content a[href]').forEach(link => {
-      const href = link.getAttribute('href');
-      if (href.startsWith('#') || href.startsWith('http') || href === "/") return;
-      link.setAttribute('data-turbo-frame', 'content');
-      link.setAttribute('data-turbo-action', 'advance');
-      link.setAttribute('href', href.endsWith(".html") ? href : href + ".html");
-    });
   });
 </script>
 </body>
