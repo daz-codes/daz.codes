@@ -1,8 +1,8 @@
-<p class="display-m">👋 Hey!</p>
+<p class="gradient-text display-l text-center margin-y">👋 Hey! I'm Daz</p>
 
 <img src="/images/daz.webp" alt="A picture of me" class="daz dropshadow">
 
-I'm Daz, a software developer with a passion for problem solving.
+I'm a software developer with a passion for problem solving.
 
 I love coding in Ruby and JavaScript and enjoy building things in Rails.
 
