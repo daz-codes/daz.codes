@@ -7,3 +7,5 @@ I'm a software developer with a passion for problem solving, who loves coding in
 👨🏼‍💻 Here are some of [my projects](/projects)
 
 📚 ... and here are some [books I wrote](/books)
+
+📝 I've also written [lots of articles](https://www.sitepoint.com/author/djones/)
