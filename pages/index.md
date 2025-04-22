@@ -4,6 +4,6 @@
 
 I'm a software developer with a passion for problem solving, who loves coding in Ruby and JavaScript and building things in Rails.
 
-🚀 Here are some of [my projects](/projects)
+👨🏼‍💻 Here are some of [my projects](/projects)
 
 📚 ... and here are some [books I wrote](/books)
