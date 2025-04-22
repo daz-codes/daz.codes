@@ -16,7 +16,8 @@
   --neonBlue: #13fbfb;
   --neonPink: #fc6df7;
   --neonPurple: #aa00d5;
-  --gradient: linear-gradient(135deg, var(--primary), var(--secondary));
+
+  --gradient: linear-gradient(135deg, var(--neonBlue), var(--neonPink), var(--neonYellow));
 
   --header-gradient: radial-gradient(
     farthest-corner circle at -30% 11% in oklch,
