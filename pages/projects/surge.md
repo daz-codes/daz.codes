@@ -9,6 +9,8 @@ tags:
 
 # Surge
 
+[Source Code](https://github.com/daz4126/surge)
+
 Surge is a tiny, ultra-lightweight JavaScript library that adds a surge of reactivity to your HTML — all in just 1kb (minified and gzipped).
 
 No virtual DOM. No build step. No dependencies. Just drop it in and go.
@@ -16,6 +18,20 @@ No virtual DOM. No build step. No dependencies. Just drop it in and go.
 Ever wonder why it takes 50kb of JavaScript, a virtual DOM, and a mountain of boilerplate just to build a counter?
 
 With Surge, it doesn’t.
+
+```html
+<main data-surge>
+  <button data-action="increment">Increase by 1</button>
+  <h1 data-value="count">0</h1>
+</main>
+
+<script>
+  surge({
+      increment: $ => $.count++
+  })
+</script>
+```
+
 
 Surge embraces the simplicity of the web and the power of HTML-first development. It supercharges your HTML with a sprinkle of declarative magic using data-* attributes — no JSX, no diffing and no dependencies. Just clean, semantic HTML — with a surge of reactiviey.
 

@@ -9,4 +9,8 @@ tags:
 
 # Fruit & Veg Cipher
 
+[source code](https://github.com/daz4126/fruit-and-veg-cipher)
+
  A code breaking game that uses a grid cipher to create a daily puzzle.
+
+ ![Can you break the code??](/images/fruit-and-veg.png)

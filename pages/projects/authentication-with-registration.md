@@ -9,4 +9,6 @@ tags:
 
 # Authentication With Registration Generator Gem
 
+[source code](https://github.com/daz4126/authentication_with_registration_generator)
+
  After giving a talk on the new Authentication Generator in Rails 8 and how to add registration pages, I wrapped up my code into a Ruby Gem (my first one!)

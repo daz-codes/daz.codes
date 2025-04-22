@@ -8,6 +8,8 @@ tags:
 
 # Swifty
 
+[source code](https://github.com/daz4126/swifty)
+
 A static site generator that uses Turbo to make a page navigation almost instant. 
 
 It’s perfect for building personal or small business sites and can also be used to create a simple blog. 
