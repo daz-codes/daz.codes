@@ -1,11 +1,9 @@
-<p class="gradient-text display-l text-center margin-y">👋 Hey! I'm Daz</p>
+<p class="gradient-text display-l">👋 Hey!</p>
 
 <img src="/images/daz.webp" alt="A picture of me" class="daz dropshadow">
 
-I'm a software developer with a passion for problem solving.
+I'm Daz, a software developer with a passion for problem solving, who loves coding in Ruby and JavaScript and building things in Rails.
 
-I love coding in Ruby and JavaScript and enjoy building things in Rails.
+🚀 Here are some of [my projects](/projects)
 
-Here's a list of [my projects](/projects)
-
-And here are some [books I wrote](/books)
+📚 ... and here are some [books I wrote](/books)

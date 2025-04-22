@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Codystar&display=swap');
 
 :root {
+  background: var(--accent-bg);
   --font-family: var(--mono-font);
   --brand-font: "Boldonse";
   --heading-font: "Jost";
@@ -15,22 +16,30 @@
   --neonBlue: #13fbfb;
   --neonPink: #fc6df7;
   --neonPurple: #aa00d5;
-  --gradient: linear-gradient(135deg, var(--neonBlue), var(--neonPink));
+  --gradient: linear-gradient(135deg, var(--primary), var(--secondary));
 
-  --hdr-gradient: radial-gradient(
+  --header-gradient: radial-gradient(
     farthest-corner circle at -30% 11% in oklch,
     oklch(80% 0.30 0) 0%, 26%, oklch(100% 0.00 217) 50% 46%, 100%, oklch(100% 0 256) 100% 60%
   );
+
+  --footer-gradient: radial-gradient(
+    farthest-corner circle at 90% 111% in oklch,
+    oklch(80% 0.30 0) 0%, 26%, oklch(100% 0.00 217) 50% 46%, 100%, oklch(100% 0 256) 100% 60%
+  );
 }
-body,body >footer{
-  background: transparent;
+body{
+  background: white;
 }
 
 body > header {
-  background-color: white;
-  background-image: var(--hdr-gradient);
+  background: var(--header-gradient);
   opacity: 0.85;
   display: flow-root;
+}
+
+body >footer{
+  font-family: var(--sans-font);
 }
 
 h1.logo{
@@ -78,6 +87,7 @@ img{
 
 main{
   text-align: left;
+  min-height: 600px;
 }
 
 h1,h2,h3,h4,h5,h6{
