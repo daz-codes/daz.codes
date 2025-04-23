@@ -1,6 +1,6 @@
 ---
 title: Fruit & Veg Cipher
-summary: A fun game - break the secret code
+summary: A fun game - break the secret code.
 position: 6
 tags:
   - cipher
