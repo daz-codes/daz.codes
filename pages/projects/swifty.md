@@ -6,8 +6,6 @@ tags:
   - projects
 ---
 
-# Swifty
-
 [source code](https://github.com/daz4126/swifty)
 
 A static site generator that uses Turbo to make a page navigation almost instant. 

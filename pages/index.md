@@ -1,3 +1,7 @@
+---
+layout: false
+---
+
 <p class="gradient-text display-l text-center display-block">👋 Hey! I'm Daz ...</p>
 
 <img src="/images/daz.webp" alt="A picture of me" class="daz dropshadow">

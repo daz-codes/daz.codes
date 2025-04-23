@@ -1,4 +1,5 @@
 ---
+title: Authentication With Registration Generator Gem
 summary: Adds registration pages and some extra methods to the built-in authentication generator.
 position: 3
 tags:
@@ -6,8 +7,6 @@ tags:
   - rails
   - authentication
 ---
-
-# Authentication With Registration Generator Gem
 
 [source code](https://github.com/daz4126/authentication_with_registration_generator)
 

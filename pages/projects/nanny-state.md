@@ -7,8 +7,6 @@ tags:
   - projects
 ---
 
-# Nanny State
-
 [source code](https://github.com/daz4126/Nanny-State)
 
 NANNY STATE is a small reactive state library that makes it simple to build speedy web apps.

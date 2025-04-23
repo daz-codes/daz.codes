@@ -7,8 +7,6 @@ tags:
   - surge
 ---
 
-# Surge
-
 [Source Code](https://github.com/daz4126/surge)
 
 Surge is a tiny, ultra-lightweight JavaScript library that adds a surge of reactivity to your HTML — all in just 1kb (minified and gzipped).
@@ -31,7 +29,6 @@ With Surge, it doesn’t.
   })
 </script>
 ```
-
 
 Surge embraces the simplicity of the web and the power of HTML-first development. It supercharges your HTML with a sprinkle of declarative magic using data-* attributes — no JSX, no diffing and no dependencies. Just clean, semantic HTML — with a surge of reactiviey.
 

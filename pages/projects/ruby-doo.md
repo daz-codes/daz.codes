@@ -8,8 +8,6 @@ tags:
   - projects
 ---
 
-# Ruby Doo
-
 [source code](https://github.com/daz4126/rubydoo)
 
 Ruby Doo was born out of my love for Ruby and frustration with JavaScript’s limited native methods. So I built my own utility library — not just as a fix, but as a fun way to bring Ruby’s elegance to the browser.
