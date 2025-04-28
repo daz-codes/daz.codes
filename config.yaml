@@ -4,6 +4,8 @@ breadcrumb_class: swifty_breadcrumb
 link_class: swifty_link
 tag_class: tag
 max_image_size: 800
+default_layout_name: site
+default_link_name: links
 
 dateFormat: 
   weekday: short
