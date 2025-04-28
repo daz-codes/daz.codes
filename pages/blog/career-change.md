@@ -1,6 +1,7 @@
 ---
 title: How I Changed To A Career In Software Development
 author: DAZ
+summary: How I changed careers from a teacher to software developer.
 tags:
   - career
   - web development
