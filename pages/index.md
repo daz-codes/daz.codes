@@ -4,8 +4,8 @@ layout: false
 
 <div class="two-column grid">
 <div class="align-vertical">
-    <p class="text-m mono-font gradient-text text-center">
-    <span class="bold text-xl">👋 I'm Daz</span> ... a software developer who 💜s solving problems with code!
+    <p class="bold text-m gradient-text text-center">
+    <span class="text-xl">👋 I'm Daz</span> ... a software developer who 💜s solving problems with code!
     </p>
 </div>
 <figure class="align-vertical">
