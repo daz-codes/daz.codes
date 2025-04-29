@@ -140,6 +140,12 @@ h6 {
     max-width: 120px;
 }
 
+.book section {
+    display: flex;
+    justify-items: center;
+    align-items: flex-start;
+}
+
 .swifty_breadcrumb {
     text-decoration: none;
 }

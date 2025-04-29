@@ -2,13 +2,13 @@
 
   ### [{{ title }}]({{ url }})
 
-  <div class="align-center">
+  <section>
   <img src="{{ image }}" alt="{{ alt }}" class="dropshadow">
 
   <p class="padding-x no-margin">
   {{ summary }}
   </p>
 
-  </div>
+  </section>
 
 </div>
