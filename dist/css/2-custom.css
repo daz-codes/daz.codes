@@ -10,6 +10,8 @@
     --daz-blue: #0f4c82;
     --primary: var(--daz-blue);
     --secondary: var(--neonPink);
+    --highlight: var(--fmauve);
+
     --neonRed: #f13943;
     --neonOrange: #f7a100;
     --neonYellow: #d8f640;
@@ -81,6 +83,10 @@ h1.logo a {
 
 h1.logo a:hover {
     background: none;
+}
+
+h1.title {
+    line-height: 2;
 }
 
 img.daz {

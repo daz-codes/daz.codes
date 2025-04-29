@@ -6,9 +6,9 @@ tags:
   - javascript
 ---
 
-![JavaScript: Novice to Ninja](/images/javascript-novice-to-ninja.jpeg)
+<img src="/images/javascript-novice-to-ninja.jpeg" alt="JavaScript: Novice to Ninja cover" class="dropshadow">
 
-JavaScript is a must-have skill for all web developers. 
+JavaScript is a must-have skill for all web developers.
 
 JavaScript: Novice to Ninja is a fun, practical, and comprehensive guide to the modern usage of this deceptively powerful language.
 
