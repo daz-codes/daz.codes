@@ -2,7 +2,7 @@
 
   ### [{{ title }}]({{ url }})
 
-  <div class="align-horizontal">
+  <div class="align-center">
   <img src="{{ image }}" alt="{{ alt }}" class="dropshadow">
 
   <p class="padding">
