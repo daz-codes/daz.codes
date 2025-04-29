@@ -86,7 +86,7 @@ h1.logo a:hover {
 }
 
 h1.title {
-    line-height: 2;
+    line-height: 1.4;
 }
 
 img.daz {
@@ -137,7 +137,7 @@ h6 {
 }
 
 .book img {
-    max-width: 100px;
+    max-width: 120px;
 }
 
 .swifty_breadcrumb {

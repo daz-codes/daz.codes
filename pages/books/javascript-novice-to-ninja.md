@@ -1,7 +1,7 @@
 ---
 summary: A fun, practical, and comprehensive guide to the modern usage of programming language of the web. From the basics of programming, to events, DOM manipulation and animations.
 position: 2
-image: /images/javascript-novice-to-ninja.jpeg
+image: /images/javascript-novice-to-ninja.webp
 alt: "JavaScript: Novice to Ninja cover"
 tags:
   - books
