@@ -1,7 +1,7 @@
 ---
 summary: A short introduction to Sinatra, the micro Ruby framework. A full tutorial that takes you through building a full example project with a database backend to help demonstrate the concepts in a practical way.
 position: 1
-image: /images/jump-start-sinatra.jpeg
+image: /images/jump-start-sinatra.webp
 alt: Jump Start Sinatra cover
 tags:
   - ruby
