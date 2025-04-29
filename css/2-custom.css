@@ -135,6 +135,10 @@ h6 {
     margin-bottom: 0.4em;
 }
 
+.book img {
+    max-width: 100px;
+}
+
 .swifty_breadcrumb {
     text-decoration: none;
 }

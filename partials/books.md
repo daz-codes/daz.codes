@@ -1,9 +1,14 @@
-<div class="project">
-<!-- markdown content starts -->
+<div class="book">
 
-### [{{ title }}]({{ url }})
+  ### [{{ title }}]({{ url }})
 
-{{ summary }}
+  <div class="align-horizontal">
+  <img src="{{ image }}" alt="{{ alt }}" class="dropshadow">
 
-<!-- markdown content ends -->
+  <p class="padding">
+  {{ summary }}
+  </p>
+
+  </div>
+
 </div>

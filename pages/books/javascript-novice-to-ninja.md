@@ -1,12 +1,14 @@
 ---
-summary: A fun, practical, and comprehensive guide to the modern usage of programming language of the web
+summary: A fun, practical, and comprehensive guide to the modern usage of programming language of the web. From the basics of programming, to events, DOM manipulation and animations.
 position: 2
+image: /images/javascript-novice-to-ninja.jpeg
+alt: "JavaScript: Novice to Ninja cover"
 tags:
   - books
   - javascript
 ---
 
-<img src="/images/javascript-novice-to-ninja.jpeg" alt="JavaScript: Novice to Ninja cover" class="dropshadow">
+<img src="{{ image }}" alt="{{ alt }}" class="dropshadow">
 
 JavaScript is a must-have skill for all web developers.
 
