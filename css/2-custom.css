@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Boldonse&family=Codystar&display=swap");
 
 :root {
-    background: var(--accent-bg);
+    background: var(--fmauve);
     --font-family: var(--sans-font);
     --brand-font: "Boldonse";
     --heading-font: "Jost";
 
+    --fmauve: #d8dcff;
     --daz-blue: #0f4c82;
     --primary: var(--daz-blue);
     --secondary: var(--neonPink);
@@ -32,15 +33,6 @@
         100%,
         oklch(100% 0 256) 100% 60%
     );
-
-    --footer-gradient: radial-gradient(
-        farthest-corner circle at 90% 111% in oklch,
-        oklch(80% 0.3 0) 0%,
-        26%,
-        oklch(100% 0 217) 50% 46%,
-        100%,
-        oklch(100% 0 256) 100% 60%
-    );
 }
 body {
     background: white;
@@ -54,6 +46,7 @@ body > header {
 
 body > footer {
     font-family: var(--sans-font);
+    background-image: linear-gradient(var(--bg), var(--fmauve));
 }
 
 h1.logo {
