@@ -1,115 +1,141 @@
-@import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Codystar&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Boldonse&family=Codystar&display=swap");
 
 :root {
-  background: var(--accent-bg);
-  --font-family: var(--sans-font);
-  --brand-font: "Boldonse";
-  --heading-font: "Jost";
+    background: var(--accent-bg);
+    --font-family: var(--sans-font);
+    --brand-font: "Boldonse";
+    --heading-font: "Jost";
 
-  --daz-blue: #0f4c82;
-  --primary: var(--daz-blue);
-  --secondary: var(--neonPink);
-  --neonRed: #f13943;
-  --neonOrange: #f7a100;
-  --neonYellow: #d8f640;
-  --neonGreen: #35f138;
-  --neonBlue: #13fbfb;
-  --neonPink: #fc6df7;
-  --neonPurple: #aa00d5;
+    --daz-blue: #0f4c82;
+    --primary: var(--daz-blue);
+    --secondary: var(--neonPink);
+    --neonRed: #f13943;
+    --neonOrange: #f7a100;
+    --neonYellow: #d8f640;
+    --neonGreen: #35f138;
+    --neonBlue: #13fbfb;
+    --neonPink: #fc6df7;
+    --neonPurple: #aa00d5;
 
-  --gradient: linear-gradient(135deg, var(--neonBlue), var(--neonPink), var(--neonYellow));
+    --gradient: linear-gradient(
+        135deg,
+        var(--neonBlue),
+        var(--neonPink),
+        var(--neonYellow)
+    );
 
-  --header-gradient: radial-gradient(
-    farthest-corner circle at -30% 11% in oklch,
-    oklch(80% 0.30 0) 0%, 26%, oklch(100% 0.00 217) 50% 46%, 100%, oklch(100% 0 256) 100% 60%
-  );
+    --header-gradient: radial-gradient(
+        farthest-corner circle at -30% 11% in oklch,
+        oklch(80% 0.3 0) 0%,
+        26%,
+        oklch(100% 0 217) 50% 46%,
+        100%,
+        oklch(100% 0 256) 100% 60%
+    );
 
-  --footer-gradient: radial-gradient(
-    farthest-corner circle at 90% 111% in oklch,
-    oklch(80% 0.30 0) 0%, 26%, oklch(100% 0.00 217) 50% 46%, 100%, oklch(100% 0 256) 100% 60%
-  );
+    --footer-gradient: radial-gradient(
+        farthest-corner circle at 90% 111% in oklch,
+        oklch(80% 0.3 0) 0%,
+        26%,
+        oklch(100% 0 217) 50% 46%,
+        100%,
+        oklch(100% 0 256) 100% 60%
+    );
 }
-body{
-  background: white;
+body {
+    background: white;
 }
 
 body > header {
-  background: var(--header-gradient);
-  opacity: 0.85;
-  display: flow-root;
+    background: var(--header-gradient);
+    opacity: 0.85;
+    display: flow-root;
 }
 
-body >footer{
-  font-family: var(--sans-font);
+body > footer {
+    font-family: var(--sans-font);
 }
 
-h1.logo{
-  margin: 0;
-  padding: 0.3em;
+h1.logo {
+    margin: 0;
+    padding: 0.3em;
 }
 
-h1.logo .daz{
-  color: var(--daz-blue);
-  font-family: "Boldonse";
-  font-size: 3rem;
-  letter-spacing: 0.1em;
+h1.logo .daz {
+    color: var(--daz-blue);
+    font-family: "Boldonse";
+    font-size: 3rem;
+    letter-spacing: 0.1em;
 }
 
-
-h1.logo .codes{
-  color: var(--neonPink);
-  font-size: 0.6em;
-  font-weight: bold;
-  text-transform: lowercase;
-  position: relative;
-  top: -0.6em;
-  left: -0.3em;
+h1.logo .codes {
+    color: var(--neonPink);
+    font-size: 0.6em;
+    font-weight: bold;
+    text-transform: lowercase;
+    position: relative;
+    top: -0.6em;
+    left: -0.3em;
 }
 
-h1.logo:hover .codes{
-  color: var(--neonPurple);
+h1.logo:hover .codes {
+    color: var(--neonPurple);
 }
 
-h1.logo a{
-  text-decoration: none;
+h1.logo a {
+    text-decoration: none;
 }
 
-h1.logo a:hover{
-  background: none;
+h1.logo a:hover {
+    background: none;
 }
 
 img.daz {
-  border-radius: 50%;
-  display: block;
-  margin: 0 auto;
-  border: 4px solid var(--neonOrange);
-  max-width: 300px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    border: 4px solid var(--neonOrange);
+    max-width: 300px;
 }
 
-img{
-  display: block;
-  margin: 0 auto;
+img {
+    display: block;
+    margin: 0 auto;
 }
 
-main{
-  text-align: left;
+main {
+    text-align: left;
 }
 
-h1,h2,h3,h4,h5,h6{
-  text-transform: uppercase;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: uppercase;
 }
 
-.project h3 a, .book h3 a{
-  text-decoration: none;
+.project h3 a,
+.book h3 a {
+    text-decoration: none;
 }
 
-.project h3 a:hover, .book h3 a:hover, .post h2 a:hover{
-  color: var(--secondary);
-  background: none;
+.project h3 a:hover,
+.book h3 a:hover,
+.post h2 a:hover {
+    color: var(--secondary);
+    background: none;
 }
 
-.project, .book, .post{
-  border-bottom: dotted 1px var(--daz-blue);
-  padding-bottom: 1em;
-  margin-bottom: 0.4em;
+.project,
+.book,
+.post {
+    border-bottom: dotted 1px var(--daz-blue);
+    padding-bottom: 1em;
+    margin-bottom: 0.4em;
+}
+
+.swifty_breadcrumb {
+    text-decoration: none;
 }

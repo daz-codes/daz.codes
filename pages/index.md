@@ -5,7 +5,7 @@ layout: false
 <div class="two-column grid">
 <div class="align-vertical">
     <p class="text-m gradient-text text-center">
-    <span class="block bold text-xl">👋 I'm Daz</span> ... a software developer who 💜s solving problems with code!
+    <span class="block bold text-xl">👋 I'm Daz</span> ... a software developer who 💜s coding and solving problems!
     </p>
 </div>
 <figure class="align-vertical">
