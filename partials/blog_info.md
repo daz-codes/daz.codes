@@ -1,3 +1,3 @@
-<div class="italic no-margin-y">
-Written by {{ author }} on {{ date }}
+<div class="bold italic primary-text no-margin-y">
+    Written by <span class="text-secondary">{{ author }}</span> on {{ date }}
 </div>
