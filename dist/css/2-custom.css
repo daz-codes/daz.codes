@@ -116,13 +116,14 @@ h6 {
 }
 
 .project h3 a,
-.book h3 a {
+.book h3 a,
+.post h3 a {
     text-decoration: none;
 }
 
 .project h3 a:hover,
 .book h3 a:hover,
-.post h2 a:hover {
+.post h3 a:hover {
     color: var(--secondary);
     background: none;
 }

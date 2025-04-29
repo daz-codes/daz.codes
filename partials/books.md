@@ -5,7 +5,7 @@
   <div class="align-center">
   <img src="{{ image }}" alt="{{ alt }}" class="dropshadow">
 
-  <p class="padding">
+  <p class="padding-x no-margin">
   {{ summary }}
   </p>
 

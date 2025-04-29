@@ -1,13 +1,11 @@
 <div class="post">
-<!-- markdown content starts -->
 
 ### [{{ title }}]({{ url }})
 
-<div class="italic">
+<div class="italic no-margin-y">
 By {{ author }} on {{ date }}
 </div>
 
 {{ summary }}
 
-<!-- markdown content ends -->
 </div>
