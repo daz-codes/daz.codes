@@ -15,3 +15,5 @@ JavaScript is a must-have skill for all web developers.
 JavaScript: Novice to Ninja is a fun, practical, and comprehensive guide to the modern usage of this deceptively powerful language.
 
 Updated to cover ECMAScript 6 and modern JavaScript development, the second edition of this step-by-step introduction to coding in JavaScript will show you how to to solve real-world problems, design eye-catching animations, build smarter forms, and develop rich applications.
+
+[Order on Amazon](https://www.amazon.co.uk/JavaScript-Novice-Ninja-Darren-Jones-dp-099538262X/dp/099538262X/ref=dp_ob_title_bk)

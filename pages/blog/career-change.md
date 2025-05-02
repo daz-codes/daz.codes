@@ -1,15 +1,13 @@
 ---
 title: How I Changed To A Career In Software Development
 author: DAZ
-summary: How I changed careers from a teacher to software developer.
+summary: Some information about changing career, including my top 5 tips for getting a job in software development.
 tags:
   - career
   - web development
   - ruby
   - rails
 ---
-
-{{ partial: blog_info }}
 
 At the start of 2024 I decided to change careers. After over 20 years teaching maths and computer science I decided to turn my passion into a profession and become a software developer. I had always loved coding and enjoyed teaching it, but was finding my hobby more fun than my day job and wanted to do it full time. And it turned out to be a great decision. I'm nearly a year into my first role as a Rails developer and have loved every minute of it!
 

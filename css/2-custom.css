@@ -149,3 +149,9 @@ h6 {
 .swifty_breadcrumb {
     text-decoration: none;
 }
+
+.tag:hover {
+    background: var(--daz-blue);
+    border-color: var(--daz-blue);
+    color: white;
+}

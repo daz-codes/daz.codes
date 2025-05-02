@@ -5,7 +5,7 @@ layout: false
 <div class="two-column grid">
 <div class="align-vertical">
     <p class="text-m gradient-text text-center">
-    <span class="block brand-font bold text-xl">👋 HEY!</span>I'm a software developer who 💜s coding and problem solving!
+    <span class="block brand-font bold text-xl">👋 HEY!</span>I'm a software developer at Yozu who 💜s coding and problem solving!
     </p>
 </div>
 <figure class="align-vertical">
@@ -20,5 +20,7 @@ layout: false
 📚 And here are some [books I wrote](/books)
 
 📝 I also write a [blog](/blog) and [ articles](https://www.sitepoint.com/author/djones/)
+
+You can find me on [GitHub](https://github.com/daz-codes) and [LinkedIn](https://www.linkedin.com/in/daz-codes/)
 
 </div>
