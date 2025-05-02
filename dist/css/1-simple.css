@@ -327,7 +327,7 @@ h3 {
 a,
 a:visited {
     color: var(--primary);
-    text-decoration-style: wavy;
+    text-decoration-style: solid;
 }
 
 a:hover {

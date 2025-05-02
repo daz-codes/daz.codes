@@ -9,7 +9,7 @@ layout: false
     </p>
 </div>
 <figure class="align-vertical">
-    <img src="/images/muppet.webp" alt="A picture of me" class="daz dropshadow">
+    <img id="pic" src="/images/simpsons.webp" alt="A picture of me" class="daz dropshadow">
 </figure>
 </div>
 
