@@ -17,4 +17,4 @@ The book is built around building a real-life example project in a fun and easil
 
 This is a clear, approachable and very easy-to-follow book that will get you to to speed with Sinatra in no time.
 
-[Order on Amazon](https://www.amazon.co.uk/Jump-Start-Sinatra-Darren-Jones/dp/0987332147/ref=sr_1_1?crid=4VDSPLPYI12P&dib=eyJ2IjoiMSJ9.Woi3l-Gqn5iXQ4FCFssLYSOCdRxBGY4TYHzTyq8i6c0.f4Br6ap64qQXNhivgH75HJ6V2KGVaH2WGVfNbOf6Rfg&dib_tag=se&keywords=jump+start+sinatra&qid=1746178435&s=books&sprefix=jump+start+sinatra%2Cstripbooks%2C68&sr=1-1)
+[Order on Amazon](https://www.amazon.co.uk/Jump-Start-Sinatra-Darren-Jones/dp/0987332147/)

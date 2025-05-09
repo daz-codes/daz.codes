@@ -4,12 +4,12 @@ layout: false
 
 <div class="two-column grid">
 <div class="align-vertical">
-    <p class="text-m gradient-text text-center">
-    <span class="block brand-font bold text-xl">👋 HEY!</span>I'm a software developer at Yozu who 💜s coding and problem solving!
+    <p class="text-xl gradient-text text-right brand-font bold uppercase">
+    Software developer Coder Problem Solver
     </p>
 </div>
 <figure class="align-vertical">
-    <img id="pic" src="/images/disney.webp" alt="A picture of me" class="daz dropshadow">
+    <img id="pic" src="/images/muppet.webp" alt="A picture of me" class="daz dropshadow">
 </figure>
 </div>
 
