@@ -331,7 +331,6 @@ a:visited {
 }
 
 a:hover {
-    text-decoration: none;
     background: var(--highlight);
 }
 

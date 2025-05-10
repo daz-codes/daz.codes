@@ -155,3 +155,9 @@ h6 {
     border-color: var(--daz-blue);
     color: white;
 }
+
+@media screen and (max-width: 600px) {
+    p.text-xl.gradient-text.text-right.brand-font.bold.uppercase {
+        text-align: center;
+    }
+}
