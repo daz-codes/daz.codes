@@ -8,14 +8,12 @@ layout: false
     Better Never Stops
     </p>
 </div>
-<figure class="align-vertical">
-    <img id="pic" src="/images/muppet.webp" alt="A picture of me" class="daz dropshadow">
-</figure>
+    <img id="pic" src="/images/muppet.webp" alt="A picture of me" class="daz dropshadow align-vertical">
 </div>
 
 <div class="text-center">
 
-<p class="text-m bold">👋 HEY! I'm Daz. I 💜 using code to solve problems!</p>
+<p class="text-m bold">👋 HEY! I'm Daz!</p>
 
 👨🏼‍💻 Here are some of [my projects](/projects)
 
