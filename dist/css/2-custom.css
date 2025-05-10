@@ -160,4 +160,8 @@ h6 {
     p.text-xl.gradient-text.text-right.brand-font.bold.uppercase {
         text-align: center;
     }
+
+    .grid {
+        gap: 0;
+    }
 }

@@ -1339,28 +1339,28 @@ sub {
     grid-template-rows: 1fr auto;
 }
 
+.grid.no-gap {
+    gap: 0;
+}
+.grid.gap-xs {
+    gap: var(--margin-xs);
+}
+.grid.gap-s {
+    gap: var(--margin-s);
+}
+.grid.gap-m {
+    gap: var(--margin-m);
+}
+.grid.gap-l {
+    gap: var(--margin-l);
+}
+.grid.gap-xl {
+    gap: var(--margin-xl);
+}
+
 @media screen and (min-width: 600px) {
     .grid {
         grid-template-columns: repeat(var(--grid-columns), minmax(0, 1fr));
-    }
-
-    .grid.no-gap {
-        gap: 0;
-    }
-    .grid.gap-xs {
-        gap: var(--margin-xs);
-    }
-    .grid.gap-s {
-        gap: var(--margin-s);
-    }
-    .grid.gap-m {
-        gap: var(--margin-m);
-    }
-    .grid.gap-l {
-        gap: var(--margin-l);
-    }
-    .grid.gap-xl {
-        gap: var(--margin-xl);
     }
 
     .one-column.grid {

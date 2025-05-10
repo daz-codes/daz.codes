@@ -2,12 +2,10 @@
 layout: false
 ---
 
-<div class="two-column grid">
-<div class="align-vertical">
-    <p class="text-xl gradient-text text-right brand-font bold uppercase">
+<div class="two-column grid align-vertical">
+    <p class="text-xl gradient-text text-right brand-font bold uppercase no-margin">
         making code dazzle
     </p>
-</div>
     <img id="pic" src="/images/muppet.webp" alt="A picture of me" class="daz dropshadow align-vertical">
 </div>
 
