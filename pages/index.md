@@ -19,6 +19,6 @@ layout: false
 
 📝 I also write a [blog](/blog) and [ articles](https://www.sitepoint.com/author/djones/)
 
-You can find me on <i class="fa-brands fa-github"></i> [GitHub](https://github.com/daz-codes) and <i class="fa-brands fa-linkedin"></i> [LinkedIn](https://www.linkedin.com/in/daz-codes/)
+<i class="fa-brands fa-github"></i> [GitHub](https://github.com/daz-codes) <i class="fa-brands fa-linkedin"></i> [LinkedIn](https://www.linkedin.com/in/daz-codes/)
 
 </div>
