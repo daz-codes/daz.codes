@@ -29,7 +29,7 @@ You can just write:
 
 ## `digits`
 
-Simple returns an array of the digits in the number, from smallest to largest.
+This simply returns an array of the digits in the number, from smallest to largest.
 
 ```ruby
 29.digits
@@ -38,7 +38,7 @@ Simple returns an array of the digits in the number, from smallest to largest.
 
 ## `gcd` and `lcm`
 
-These stand for *greatest common divisor* and *lowes common multiple* respetively.
+These stand for *greatest common divisor* and *lowest common multiple* respectively.
 
 The GCD of two (or more) numbers is the highest number that is a divisor (or factor) of all the numbers provided, so for example:
 
