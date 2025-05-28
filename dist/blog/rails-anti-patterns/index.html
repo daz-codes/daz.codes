@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="icon"
+            href="/favicon.ico"
+            sizes="48x48"
+            type="image/x-icon"
+        />
+        <link
+            rel="icon"
+            href="/favicon-16x16.webp"
+            sizes="16x16"
+            type="image/x-icon"
+        />
+        <link
+            rel="icon"
+            href="/favicon-32x32.webp"
+            sizes="32x32"
+            type="image/png"
+        />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.webp" />
+        <link rel="icon" sizes="192x192" href="/android-chrome-192x19.webp" />
+        <link rel="icon" sizes="512x512" href="/android-chrome-512x512.webp" />
+        <script
+            src="https://kit.fontawesome.com/6b5e91c70a.js"
+            crossorigin="anonymous"
+        ></script>
+        <title>DAZ Codes || Rails Anti-Patterns</title>
+    <script type="module">import * as Turbo from 'https://esm.sh/@hotwired/turbo';</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/monokai-sublime.min.css">
+<link rel="stylesheet" href="/css/1-simple.css" />
+<link rel="stylesheet" href="/css/2-custom.css" />
+</head>
+    <body>
+        <header class="sticky dropshadow">
+            <h1 class="logo text-center">
+                <a href="/" title="home"
+                    ><span class="daz">DAZ</span
+                    ><span class="codes mono-font">&lt;/codes&gt;</span></a
+                >
+            </h1>
+        </header>
+        <main class="container"><div><a class="swifty_breadcrumb" href="/">Home</a> &raquo; <a class="swifty_breadcrumb" href="/blog">Blog</a> &raquo; <a class="swifty_breadcrumb" href="/blog/rails-anti-patterns">Rails Anti Patterns</a></div>
+<h1 class="title brand-font gradient-text">Rails Anti-Patterns</h1>
+
+<div class="bold italic primary-text no-margin-y">
+    Written by <span class="secondary-text">DAZ</span> on Mon, 19 May 2025
+</div>
+
+<div class="tags"><a class="tag" href="/tags/rubydoo">rubydoo</a><a class="tag" href="/tags/javascript">javascript</a><a class="tag" href="/tags/ruby">ruby</a></div>
+
+<p>Last night I had the pleasure of hearing <a href="">Chad Pytel</a> speak at NWRUG.</p>
+<p>Chad is CEO of <a href="">Thoughtbot</a> and author of <a href="">Rails Anti Patterns</a>. That book is now 10 years old and last night he revisited some of the antimpatterns that were dealt with in the book and invited us to reflect on what has changed in Rails in the last 10 years. It was a really interesting discussion and it was a shame we ran out of time.</p>
+<h2>Responders</h2>
+<p>Telling an action how to respond to differen formats is a common pattern:</p>
+<pre><code>
+</code></pre>
+<pre><code>respond_to :html, :json
+</code></pre>
+<p>Then in the action all you need to write is this:</p>
+<pre><code>respond_with @thing
+</code></pre>
+<p>This was added in Rails 3 and removed not long after! It was felt it did too much so was abstracted into a gem (which still exists!)</p>
+<p>It was generally felt that these days any api calls are hosted under an api. domain so this pattern isn&#39;t used as much, although a few of us broguht up that having multiple respond_to calls is happening a lot more again due to the use of Turbo Streams.</p>
+<h2>Fat Controllers</h2>
+<p>Picture here ...</p>
+<p>Fat controllers have been scorned since the early days of Rails, so it was no surprise when this came up.</p>
+<h2>Fat Models</h2>
+<p>One of the repercussions of trying to slim down fat controllers is that a lot of the logic gets moved to the model ... and filling the model up with lots of code isn&#39;t great either.</p>
+<p>Models that do too much was looked at and there was a good discussion about the use of service obejcts, concerns and ??</p>
+<p>Was this when the Presenter pattern was mentioned?</p>
+<h2>Denormalized Data</h2>
+<p>Chad finished by displaying 4 rules that were given in the book and invited any comments:</p>
+<ol>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ol>
+<p>If you have have a User model and want an admin
+Even if you want more you can
+Obviously this changes if users can add different types, you will need to store it. I came upon this idea when building PR!OR!TY! ...</p>
+
+</main>
+        <footer>
+            <p>
+                This site was built with Swifty, the super speedy static site
+                generator.
+            </p>
+            <p>&copy; DAZ 2025. Made with 💜 by DAZ.</p>
+        </footer>
+    </body>
+</html>
