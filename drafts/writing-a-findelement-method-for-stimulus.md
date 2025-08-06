@@ -1,0 +1,62 @@
+---
+title: Writing a findElement Method for Stimulus
+author: DAZ
+summary:
+tags:
+  - stimulus
+  - javascript
+  - rails
+  - hotwire
+---
+
+While working on a [kata](https://github.com/MerseyRails/merseyrails-kata-1) for the recent [Mersey Rails](https://merseyrails.com) meet up, me and a colleague were a bit unhappy with how our solutions looked because they had Stimulus controllers that used `document.getElementById` and `this.element.querySelector`, both of which didn't feel very 'stimulus-like'. It was made worse by the fact that using the classes API only returns the name of the class rather than the selector needed, leading to code like this:
+
+```
+const el = this.querySelector(`.${this.activeClass}`)
+```
+
+Having to use a template literal to preprend the '.' to the start also felt cumbersome.
+
+We both agreed that it would be much nicer if the Stimulus API provided a method that would find elements based on the class names ... something like this:
+
+```
+el = this.find(this.activeClass)
+```
+
+It would be aware that `this.activeClass` was a class and prepend the '.' for you.
+
+I did a bit of digging and found that the `Scope` class in Stimulus already has two methods called `findElement` and `findAllElements` ... these basically provide a wrapper around `this.element.querySelector` and `this.element.querySelectorAll` so ensure they are scoped to the element, but they are only accessible from a controller using `this.scope.findElement` and `this.findAllElements`.
+
+So I decided to patch these methods into the `Controller` class as well as automatically prepending a '.' in front of any classes provided using the class API. While I was at it, I added the ability to search for an ID if one exists. This means that you can do the following, given the this HTML:
+
+```html
+<div data-controller="my-controller"
+      data-my-controller-active-class="active"
+      data-my-controller-loading-classes="busy loading"
+    >
+      <div id="inside">This is inside</div>
+      <div class="busy loading">This is loading</div>
+      <div class="active"><p class="intro">This is the intro</p></div>
+    </div>
+    <div id="outside" class="busy">This is outside</div>
+```
+
+You can find Elements scoped inside the root element by passing the id:
+
+`this.findElement("inside")` will return  `<div id="inside" class="busy loading">...</div>`
+`this.findElement("outside")` will return  `undefined` since it doesn't match any element inside the controller
+
+You can find elements using defined classes:
+
+`this.getElement(this.activeClass)` will return  `<div class="active">...</div>`
+`this.getElement(this.loadingClasses)` will return `<div class="busy loading">...</div>`
+
+Find element using a standard query selector:
+
+`this.getElement(.active p.intro)` will return `<p class="intro">...</p>`
+
+The method looks for items with an id first, then looks to see if any classes have been defined on the controller and last of all falls back to using `this.element.querySelector`
+
+`this.findAllElements` works in the same way, but returns an array of all matching elements. It does **not** look for elements with an id as there should only be one element with an id.
+
+I submitted a [PR to add this Stimulus](https://github.com/hotwired/stimulus/pull/854) ... hopefully it will get accepted!

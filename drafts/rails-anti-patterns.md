@@ -32,7 +32,7 @@ respond_with @thing
 
 This was added in Rails 3 and removed not long after! It was felt it did too much so was abstracted into a gem (which still exists!)
 
-It was generally felt that these days any api calls are hosted under an api. domain so this pattern isn't used as much, although a few of us broguht up that having multiple respond_to calls is happening a lot more again due to the use of Turbo Streams.
+It was generally felt that these days any api calls are hosted under an api. domain so this pattern isn't used as much, although a few of us brought up that having multiple respond_to calls is happening a lot more again due to the use of Turbo Streams.
 
 ## Fat Controllers
 
