@@ -55,11 +55,11 @@
 <div class="tags"><a class="tag" href="/tags/stimulus">stimulus</a><a class="tag" href="/tags/javascript">javascript</a><a class="tag" href="/tags/rails">rails</a><a class="tag" href="/tags/hotwire">hotwire</a></div>
 
 <p>While working on a <a href="https://github.com/MerseyRails/merseyrails-kata-1">kata</a> for the recent <a href="https://merseyrails.com">Mersey Rails</a> meet up, me and a colleague were a bit unhappy with how our solutions looked because they had Stimulus controllers that used <code>document.getElementById</code> and <code>this.element.querySelector</code>, both of which didn&#39;t feel very &#39;stimulus-like&#39;. It was made worse by the fact that using the classes API only returns the name of the class rather than the selector needed, leading to code like this:</p>
-<pre><code>const el = this.querySelector(`.${this.activeClass}`)
+<pre><code class="language-javascript">const el = this.querySelector(`.${this.activeClass}`)
 </code></pre>
 <p>Having to use a template literal to preprend the &#39;.&#39; to the start also felt cumbersome.</p>
 <p>We both agreed that it would be much nicer if the Stimulus API provided a method that would find elements based on the class names ... something like this:</p>
-<pre><code>el = this.find(this.activeClass)
+<pre><code class="language-javascript">el = this.find(this.activeClass)
 </code></pre>
 <p>It would be aware that <code>this.activeClass</code> was a class and prepend the &#39;.&#39; for you.</p>
 <p>I did a bit of digging and found that the <code>Scope</code> class in Stimulus already has two methods called <code>findElement</code> and <code>findAllElements</code> ... these basically provide a wrapper around <code>this.element.querySelector</code> and <code>this.element.querySelectorAll</code> so ensure they are scoped to the element, but they are only accessible from a controller using <code>this.scope.findElement</code> and <code>this.findAllElements</code>.</p>
@@ -84,6 +84,19 @@
 <p><code>this.getElement(.active p.intro)</code> will return <code>&lt;p class=&quot;intro&quot;&gt;...&lt;/p&gt;</code></p>
 <p>The method looks for items with an id first, then looks to see if any classes have been defined on the controller and last of all falls back to using <code>this.element.querySelector</code></p>
 <p><code>this.findAllElements</code> works in the same way, but returns an array of all matching elements. It does <strong>not</strong> look for elements with an id as there should only be one element with an id.</p>
+<p>The key addition was this private method that checks to see if the string passed is stored in <code>this.classes</code> and if it is will prepend the &#39;.&#39; automatically:</p>
+<pre><code class="language-javascript">private classifySelector(selector: string | string[]): string {
+    const tokens = Array.isArray(selector) ? selector : [selector]
+
+    const definedClasses: string[] = (this.constructor as any).classes.flatMap((key: string) =&gt; {
+      const value = (this as any)[`${key}Classes`] as string[] | undefined
+      return value ?? []
+    })
+
+    const allTokensDefined = tokens.every((token) =&gt; definedClasses.includes(token))
+    return &quot;.&quot; + tokens.join(allTokensDefined ? &quot;.&quot; : &quot; &quot;)
+  }
+</code></pre>
 <p>I submitted a <a href="https://github.com/hotwired/stimulus/pull/854">PR to add this Stimulus</a> ... hopefully it will get accepted!</p>
 
 </main>
