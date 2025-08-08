@@ -1,5 +1,5 @@
 ---
-title: Writing a findElement Method for Stimulus
+title: Writing a Find Element Method for Stimulus
 author: DAZ
 summary: Writing a couple of new methods for Stimulus Controllers
 tags:
@@ -20,7 +20,7 @@ Having to use a template literal to preprend the '.' to the start also felt cumb
 We both agreed that it would be much nicer if the Stimulus API provided a method that would find elements based on the class names ... something like this:
 
 ```javascript
-el = this.find(this.activeClass)
+const el = this.find(this.activeClass)
 ```
 
 It would be aware that `this.activeClass` was a class and prepend the '.' for you.

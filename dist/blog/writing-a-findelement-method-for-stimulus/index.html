@@ -30,7 +30,7 @@
             src="https://kit.fontawesome.com/6b5e91c70a.js"
             crossorigin="anonymous"
         ></script>
-        <title>DAZ Codes || Writing a findElement Method for Stimulus</title>
+        <title>DAZ Codes || Writing a Find Element Method for Stimulus</title>
     <script type="module">import * as Turbo from 'https://esm.sh/@hotwired/turbo';</script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/monokai-sublime.min.css">
 <link rel="stylesheet" href="/css/1-simple.css" />
@@ -46,10 +46,10 @@
             </h1>
         </header>
         <main class="container"><div><a class="swifty_breadcrumb" href="/">Home</a> &raquo; <a class="swifty_breadcrumb" href="/blog">Blog</a> &raquo; <a class="swifty_breadcrumb" href="/blog/writing-a-findelement-method-for-stimulus">Writing A Findelement Method For Stimulus</a></div>
-<h1 class="title brand-font gradient-text">Writing a findElement Method for Stimulus</h1>
+<h1 class="title brand-font gradient-text">Writing a Find Element Method for Stimulus</h1>
 
 <div class="bold italic primary-text no-margin-y">
-    Written by <span class="secondary-text">DAZ</span> on Wed, 6 Aug 2025
+    Written by <span class="secondary-text">DAZ</span> on Fri, 8 Aug 2025
 </div>
 
 <div class="tags"><a class="tag" href="/tags/stimulus">stimulus</a><a class="tag" href="/tags/javascript">javascript</a><a class="tag" href="/tags/rails">rails</a><a class="tag" href="/tags/hotwire">hotwire</a></div>
@@ -59,7 +59,7 @@
 </code></pre>
 <p>Having to use a template literal to preprend the &#39;.&#39; to the start also felt cumbersome.</p>
 <p>We both agreed that it would be much nicer if the Stimulus API provided a method that would find elements based on the class names ... something like this:</p>
-<pre><code class="language-javascript">el = this.find(this.activeClass)
+<pre><code class="language-javascript">const el = this.find(this.activeClass)
 </code></pre>
 <p>It would be aware that <code>this.activeClass</code> was a class and prepend the &#39;.&#39; for you.</p>
 <p>I did a bit of digging and found that the <code>Scope</code> class in Stimulus already has two methods called <code>findElement</code> and <code>findAllElements</code> ... these basically provide a wrapper around <code>this.element.querySelector</code> and <code>this.element.querySelectorAll</code> so ensure they are scoped to the element, but they are only accessible from a controller using <code>this.scope.findElement</code> and <code>this.findAllElements</code>.</p>
