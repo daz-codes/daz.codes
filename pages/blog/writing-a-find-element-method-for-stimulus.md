@@ -51,7 +51,7 @@ this.findElement("inside")
 
 ```javascript
 this.findElement("outside")
-,,,`
+```
 
 This will return  `undefined` since it doesn't match any element inside the controller
 
