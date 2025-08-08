@@ -43,17 +43,38 @@ So I decided to patch these methods into the `Controller` class as well as autom
 
 You can find Elements scoped inside the root element by passing the id:
 
-`this.findElement("inside")` will return  `<div id="inside" class="busy loading">...</div>`
-`this.findElement("outside")` will return  `undefined` since it doesn't match any element inside the controller
+```javascript
+this.findElement("inside")
+```
+
+ This will return  `<div id="inside" class="busy loading">...</div>`
+
+```javascript
+this.findElement("outside")
+,,,`
+
+This will return  `undefined` since it doesn't match any element inside the controller
 
 You can find elements using defined classes:
 
-`this.getElement(this.activeClass)` will return  `<div class="active">...</div>`
-`this.getElement(this.loadingClasses)` will return `<div class="busy loading">...</div>`
+```
+this.getElement(this.activeClass)
+```
+This will return  `<div class="active">...</div>`
 
-Find element using a standard query selector:
+```javascript
+this.getElement(this.loadingClasses)
+```
 
-`this.getElement(.active p.intro)` will return `<p class="intro">...</p>`
+This will return `<div class="busy loading">...</div>`
+
+You can also find elements using a standard query selector:
+
+```javascript
+this.getElement(.active p.intro)
+```
+
+This will return `<p class="intro">...</p>`
 
 The method looks for items with an id first, then looks to see if any classes have been defined on the controller and last of all falls back to using `this.element.querySelector`
 

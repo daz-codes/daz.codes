@@ -75,13 +75,27 @@
     &lt;div id=&quot;outside&quot; class=&quot;busy&quot;&gt;This is outside&lt;/div&gt;
 </code></pre>
 <p>You can find Elements scoped inside the root element by passing the id:</p>
-<p><code>this.findElement(&quot;inside&quot;)</code> will return  <code>&lt;div id=&quot;inside&quot; class=&quot;busy loading&quot;&gt;...&lt;/div&gt;</code>
-<code>this.findElement(&quot;outside&quot;)</code> will return  <code>undefined</code> since it doesn&#39;t match any element inside the controller</p>
-<p>You can find elements using defined classes:</p>
-<p><code>this.getElement(this.activeClass)</code> will return  <code>&lt;div class=&quot;active&quot;&gt;...&lt;/div&gt;</code>
-<code>this.getElement(this.loadingClasses)</code> will return <code>&lt;div class=&quot;busy loading&quot;&gt;...&lt;/div&gt;</code></p>
-<p>Find element using a standard query selector:</p>
-<p><code>this.getElement(.active p.intro)</code> will return <code>&lt;p class=&quot;intro&quot;&gt;...&lt;/p&gt;</code></p>
+<pre><code class="language-javascript">this.findElement(&quot;inside&quot;)
+</code></pre>
+<p> This will return  <code>&lt;div id=&quot;inside&quot; class=&quot;busy loading&quot;&gt;...&lt;/div&gt;</code></p>
+<pre><code class="language-javascript">this.findElement(&quot;outside&quot;)
+,,,`
+
+This will return  `undefined` since it doesn&#39;t match any element inside the controller
+
+You can find elements using defined classes:
+</code></pre>
+<p>this.getElement(this.activeClass)</p>
+<pre><code>This will return  `&lt;div class=&quot;active&quot;&gt;...&lt;/div&gt;`
+
+```javascript
+this.getElement(this.loadingClasses)
+</code></pre>
+<p>This will return <code>&lt;div class=&quot;busy loading&quot;&gt;...&lt;/div&gt;</code></p>
+<p>You can also find elements using a standard query selector:</p>
+<pre><code class="language-javascript">this.getElement(.active p.intro)
+</code></pre>
+<p>This will return <code>&lt;p class=&quot;intro&quot;&gt;...&lt;/p&gt;</code></p>
 <p>The method looks for items with an id first, then looks to see if any classes have been defined on the controller and last of all falls back to using <code>this.element.querySelector</code></p>
 <p><code>this.findAllElements</code> works in the same way, but returns an array of all matching elements. It does <strong>not</strong> look for elements with an id as there should only be one element with an id.</p>
 <p>The key addition was this private method that checks to see if the string passed is stored in <code>this.classes</code> and if it is will prepend the &#39;.&#39; automatically:</p>
