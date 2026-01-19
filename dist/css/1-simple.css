@@ -425,7 +425,6 @@ header > nav a:visited,
 .tabs a,
 .tabs a:visited {
     margin: 0 var(--margin-xs);
-    border-radius: var(--radius-l);
     color: var(--primary);
     display: inline-block;
     padding: 0 var(--padding-s);
@@ -440,8 +439,6 @@ header > nav a[aria-current="true"],
 .tabs a.current,
 .tabs a[aria-current="page"],
 .tabs a[aria-current="true"] {
-    background-color: var(--primary);
-    color: var(--bg);
     cursor: pointer;
 }
 

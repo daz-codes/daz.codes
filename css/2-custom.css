@@ -58,7 +58,7 @@ header {
 header > nav {
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
 }
 
 h1.logo {
@@ -173,5 +173,10 @@ h6 {
 
     .grid {
         gap: 0;
+    }
+
+    header > nav {
+        position: static;
+        text-align: right;
     }
 }
