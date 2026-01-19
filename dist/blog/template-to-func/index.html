@@ -31,10 +31,11 @@
             crossorigin="anonymous"
         ></script>
         <title>DAZ Codes || Template to Func</title>
-    <script type="module">import * as Turbo from 'https://esm.sh/@hotwired/turbo';</script>
+    
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/monokai-sublime.min.css">
 <link rel="stylesheet" href="/css/1-simple.css" />
 <link rel="stylesheet" href="/css/2-custom.css" />
+
 </head>
     <body>
         <header class="sticky dropshadow">
@@ -44,17 +45,22 @@
                     ><span class="codes mono-font">&lt;/codes&gt;</span></a
                 >
             </h1>
+            <nav>
+                <a href="/blog" title="my blog">Blog</a>
+                <a href="/projects" title="my projects">Projects</a>
+                <a href="/books" title="my books">Books</a>
+            </nav>
         </header>
         <main class="container"><div><a class="swifty_breadcrumb" href="/">Home</a> &raquo; <a class="swifty_breadcrumb" href="/blog">Blog</a> &raquo; <a class="swifty_breadcrumb" href="/blog/template-to-func">Template To Func</a></div>
 <h1 class="title brand-font gradient-text">Template to Func</h1>
 
 <div class="bold italic primary-text no-margin-y">
-    Written by <span class="secondary-text">DAZ</span> on Wed, 4 Jun 2025
+    Written by <span class="secondary-text">DAZ</span> on Mon, 19 Jan 2026
 </div>
 
 <div class="tags"><a class="tag" href="/tags/rubydoo">rubydoo</a><a class="tag" href="/tags/javascript">javascript</a><a class="tag" href="/tags/ruby">ruby</a></div>
 
-<p>Yesterday at work, somebody posted this JavaScript snippet, saying they liked how the <code>some</code> method worked:</p>
+<p>Wahhhhh at work, somebody posted this JavaScript snippet, saying they liked how the <code>some</code> method worked:</p>
 <pre><code class="language-javascript">const anyChecked = filterTargets.some(filter =&gt; filter.checked)
 </code></pre>
 <p>Someone replied, saying they preferred how to do it in Ruby:</p>
@@ -76,11 +82,11 @@ const anyChecked = filterTargets.some(filterChecker)
 <pre><code class="language-javascript">const $ = method =&gt; obj =&gt; obj[method]
 </code></pre>
 <p>Now we can call it like this:</p>
-<pre><code class="language-javascript">const anyChecked = filterTargets.some($ `checked`)
+<pre><code class="language-javascript">const anyChecked = filterTargets.some($`checked`)
 </code></pre>
 <p>... which, while not exactly the same, is much closer to the Ruby version.</p>
 <p>So I added it to an updated version of Ruby Doo, so now you can write this:</p>
-<pre><code class="language-javascript">const anyChecked = filter_targets.any($ `checked`)
+<pre><code class="language-javascript">const anyChecked = filter_targets.any($`checked`)
 </code></pre>
 <p>I&#39;m not sure how much it would get used, but it was fun to implement and is more useful when using Ruby Doo, which adds a lot more methods to JavaScript objects. I like the fact it uses tag template functions in a creative way and the use of the <code>$</code> is similar to the way it&#39;s used in <a href="https://medium.com/@abhishekprasadkashyap/exploring-template-literals-javascripts-powerful-string-interpolation-5f62c1f04c0a">template literal interpolation</a>. And I decided to call it <strong>Template to Func</strong>, in honour of the Ruby method that inspired it, since it uses template literals instead of symbols and functinos instead of procs.</p>
 

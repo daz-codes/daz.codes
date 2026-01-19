@@ -1,6 +1,7 @@
 {
   "dependencies": {
-    "@daz4126/swifty": "^2.0.0",
-    "chokidar": "^4.0.3"
+    "@daz4126/swifty": "^2.5.0",
+    "chokidar": "^4.0.3",
+    "serve": "^14.2.5"
   }
 }

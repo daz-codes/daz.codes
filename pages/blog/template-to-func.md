@@ -8,7 +8,7 @@ tags:
   - ruby
 ---
 
-Yesterday at work, somebody posted this JavaScript snippet, saying they liked how the `some` method worked:
+Wahhhhh at work, somebody posted this JavaScript snippet, saying they liked how the `some` method worked:
 
 ```javascript
 const anyChecked = filterTargets.some(filter => filter.checked)
@@ -53,7 +53,7 @@ const $ = method => obj => obj[method]
 Now we can call it like this:
 
 ```javascript
-const anyChecked = filterTargets.some($ `checked`)
+const anyChecked = filterTargets.some($`checked`)
 ````
 
 ... which, while not exactly the same, is much closer to the Ruby version.
@@ -62,7 +62,7 @@ So I added it to an updated version of Ruby Doo, so now you can write this:
 
 
 ```javascript
-const anyChecked = filter_targets.any($ `checked`)
+const anyChecked = filter_targets.any($`checked`)
 ````
 
 I'm not sure how much it would get used, but it was fun to implement and is more useful when using Ruby Doo, which adds a lot more methods to JavaScript objects. I like the fact it uses tag template functions in a creative way and the use of the `$` is similar to the way it's used in [template literal interpolation](https://medium.com/@abhishekprasadkashyap/exploring-template-literals-javascripts-powerful-string-interpolation-5f62c1f04c0a). And I decided to call it **Template to Func**, in honour of the Ruby method that inspired it, since it uses template literals instead of symbols and functinos instead of procs.

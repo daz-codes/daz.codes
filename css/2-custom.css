@@ -51,6 +51,16 @@ body > footer {
     background-image: linear-gradient(var(--bg), var(--fmauve));
 }
 
+header {
+    position: relative;
+}
+
+header > nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 h1.logo {
     margin: 0;
     padding: 0.3em;

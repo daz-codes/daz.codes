@@ -1,6 +1,6 @@
 ---
 summary: A simple task manager to help you focus on what's important.
-position: 1
+position: 4
 tags:
   - priority
   - tasks

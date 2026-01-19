@@ -31,10 +31,11 @@
             crossorigin="anonymous"
         ></script>
         <title>DAZ Codes || Surge</title>
-    <script type="module">import * as Turbo from 'https://esm.sh/@hotwired/turbo';</script>
+    
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/monokai-sublime.min.css">
 <link rel="stylesheet" href="/css/1-simple.css" />
 <link rel="stylesheet" href="/css/2-custom.css" />
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </head>
     <body>
         <header class="sticky dropshadow">
@@ -49,26 +50,20 @@
 
 <h1 class="title brand-font gradient-text">Surge</h1>
 
-<p><a href="https://github.com/daz4126/surge">Source Code</a></p>
-<p>Surge is a tiny, ultra-lightweight JavaScript library that adds a surge of reactivity to your HTML — all in just 1kb (minified and gzipped).</p>
-<p>No virtual DOM. No build step. No dependencies. Just drop it in and go.</p>
-<p>Ever wonder why it takes 50kb of JavaScript, a virtual DOM, and a mountain of boilerplate just to build a counter?</p>
-<p>With Surge, it doesn’t.</p>
-<pre><code class="language-html">&lt;main data-surge&gt;
-  &lt;button data-action=&quot;increment&quot;&gt;Increase by 1&lt;/button&gt;
-  &lt;h1 data-value=&quot;count&quot;&gt;0&lt;/h1&gt;
-&lt;/main&gt;
-
-&lt;script&gt;
-  surge({
-      increment: $ =&gt; $.count++
-  })
-&lt;/script&gt;
+<p><a href="https://github.com/daz4126/helium">Source Code</a></p>
+<p>Helium is an ultra-light library that makes HTML interactive!</p>
+<p>Here&#39;s a simple example of a button that counts the number of times it has been clicked and turns red after more than 3 clicks:</p>
+<pre><code class="language-html">&lt;button @click=&quot;count++&quot; :style=&quot;count &gt; 3 &amp;&amp; &#39;background: red&#39;&quot;&gt;
+    clicked &lt;b @text=&quot;count&quot;&gt;0&lt;/b&gt; times
+&lt;/button&gt;
 </code></pre>
-<p>Surge embraces the simplicity of the web and the power of HTML-first development. It supercharges your HTML with a sprinkle of declarative magic using data-* attributes — no JSX, no diffing and no dependencies. Just clean, semantic HTML — with a surge of reactiviey.</p>
-<p>⚡️ Two-way binding — Update your data or your UI, and both stay in sync ⚡️ Action binding with parameters — Easily wire logic to events like click, input, or submit ⚡️ LocalStorage support — Persist state with zero config ⚡️ Reactive HTML insertion — Dynamically add content and Surge wires it up automatically</p>
-<p>Surge doesn&#39;t fight the browser — it works with it. HTML is your template and JavaScript is your logic. Surge brings them together in a powerful way then gets out of your way to let you build. And it&#39;s so small you&#39;ll hardly even know it&#39;s there.</p>
-<p>Surge is built with simplicity in mind. Whether you’re prototyping, enhancing a static site, or building a micro-app, Surge gives you the power to be productive — without the weight of a full framework.</p>
+<p>It&#39;s really simple to use - just sprinkle the magic @attributes into your HTML and watch it come alive!</p>
+<h2>Why Helium?</h2>
+<p>Helium is designed for developers who want:</p>
+<p><strong>Lightweight</strong> - Just over 3KB minified and gzipped
+<strong>Powerful</strong> - Declarative JavaScript in your HTML
+<strong>Zero build step</strong> - Works directly in the browser with no compiling
+<strong>Easy to learn</strong> - If you know HTML and basic JavaScript, you&#39;re ready</p>
 
 </main>
         <footer>

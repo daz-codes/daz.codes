@@ -1,6 +1,6 @@
 ---
 summary: A static site generator that uses Turbo to make a page navigation almost instant.
-position: 1
+position: 3
 tags:
   - swifty
   - projects
