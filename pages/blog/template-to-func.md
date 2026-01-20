@@ -2,6 +2,7 @@
 title: Template to Func
 author: DAZ
 summary: A neat little helper function that mimics the Symbol to Proc method in Ruby
+date: 13/06/2025
 tags:
   - rubydoo
   - javascript
