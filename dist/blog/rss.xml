@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DAZ codes Blog</title>
+    <link>/blog</link>
+    <description>My thoughts about coding and anything else</description>
+    <language>en</language>
+    <lastBuildDate>Tue, 20 Jan 2026 20:32:42 GMT</lastBuildDate>
+    <atom:link href="/blog/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Template to Func</title>
+      <link>/blog/template-to-func</link>
+      <guid isPermaLink="true">/blog/template-to-func</guid>
+      <pubDate>Mon, 19 Jan 2026 00:00:00 GMT</pubDate>
+      <description>Wahhhhh at work, somebody posted this JavaScript snippet, saying they liked how the `some` method worked:
+
+```javascript
+const anyChecked = filterTargets.some(filter =&gt; filter.checked)
+````
+
+Someone replied, saying they preferred how to do it in Ruby:
+
+```ruby
+any_checked = filter_targets.any?(&amp;:che...</description>
+    </item>
+    <item>
+      <title>Ruby Number Methods</title>
+      <link>/blog/ruby-number-methods</link>
+      <guid isPermaLink="true">/blog/ruby-number-methods</guid>
+      <pubDate>Sat, 07 Jun 2025 23:00:00 GMT</pubDate>
+      <description>One of the biggest advantages of making the [Ruby Doo](/projects/ruby-doo) library was going through all of the Ruby methods for numbers, strings, arrays and hashes. I learnt about so many methods I had no idea existed and discovered some really useful ones. In this post I&apos;m going to look at some of...</description>
+    </item>
+    <item>
+      <title>How I Changed To A Career In Software Development</title>
+      <link>/blog/career-change</link>
+      <guid isPermaLink="true">/blog/career-change</guid>
+      <pubDate>Fri, 09 May 2025 23:00:00 GMT</pubDate>
+      <description>At the start of 2024 I decided to change careers. After over 20 years teaching maths and computer science I decided to turn my passion into a profession and become a software developer. I had always loved coding and enjoyed teaching it, but was finding my hobby more fun than my day job and wanted to...</description>
+    </item>
+  </channel>
+</rss>
