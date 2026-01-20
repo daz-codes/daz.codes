@@ -11,7 +11,11 @@ layout: false
 
 <div class="text-center">
 
-<p class="text-l bold">👋 HEY! I'm Daz and I 💜 coding!</p>
+<p class="text-l bold">👋 HEY! I'm Daz and I <span class="gradient-text">💜</span> coding!</p>
+
+I work as a software developer at [Yozu](https://yozu.co.uk) where I mainly use [Ruby on Rails](https://rubyonrails.org).
+
+I also enjoy coding in JavaScript and Elixir.
 
 👨🏼‍💻 Here are some of [my projects](/projects)
 
@@ -19,6 +23,6 @@ layout: false
 
 📝 I also write a [blog](/blog) and [ articles](https://www.sitepoint.com/author/djones/)
 
-<i class="fa-brands fa-github"></i>[GitHub](https://github.com/daz-codes) | <i class="fa-brands fa-linkedin"></i>[LinkedIn](https://www.linkedin.com/in/daz-codes/)
+<i class="fa-brands fa-github"></i> [GitHub](https://github.com/daz-codes) | <i class="fa-brands fa-linkedin"></i> [LinkedIn](https://www.linkedin.com/in/daz-codes/)
 
 </div>
