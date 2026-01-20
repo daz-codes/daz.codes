@@ -3,12 +3,12 @@ title: Ruby Number Methods
 author: DAZ
 summary: A summary of some nice methods for numbers in Ruby
 tags:
-  - rubydoo
+  - rubymonkey
   - javascript
   - ruby
 ---
 
-One of the biggest advantages of making the [Ruby Doo](/projects/ruby-doo) library was going through all of the Ruby methods for numbers, strings, arrays and hashes. I learnt about so many methods I had no idea existed and discovered some really useful ones. In this post I'm going to look at some of my favourites.
+One of the biggest advantages of making the [Ruby Monkey](/projects/ruby-monkey) library was going through all of the Ruby methods for numbers, strings, arrays and hashes. I learnt about so many methods I had no idea existed and discovered some really useful ones. In this post I'm going to look at some of my favourites.
 
 ## `between?`
 

@@ -2,9 +2,9 @@
 title: Template to Func
 author: DAZ
 summary: A neat little helper function that mimics the Symbol to Proc method in Ruby
-date: 13/06/2025
+date: 13/6/2025
 tags:
-  - rubydoo
+  - rubymonkey
   - javascript
   - ruby
 ---
@@ -21,7 +21,7 @@ Someone replied, saying they preferred how to do it in Ruby:
 any_checked = filter_targets.any?(&:checked)
 ```
 
-I had already implemented the `any` in my [Ruby Doo](/projects/ruby-doo) library, but I also like the way you can use the [symbol to proc](https://www.mintbit.com/blog/rubys-symbol-to-proc-shorthand-method-name/) shorthand notation in Ruby to automatically call a method on each element passed to it. Interesting fact that this was originally a Rails method that was then merged into Ruby core as it proved so useful. It does seems a lot of needless code writing `filter => filter.checked` when all you want to do is apply a method to each element in the array.
+I had already implemented the `any` in my [Ruby Monkey](/projects/ruby-monkey) library, but I also like the way you can use the [symbol to proc](https://www.mintbit.com/blog/rubys-symbol-to-proc-shorthand-method-name/) shorthand notation in Ruby to automatically call a method on each element passed to it. Interesting fact that this was originally a Rails method that was then merged into Ruby core as it proved so useful. It does seems a lot of needless code writing `filter => filter.checked` when all you want to do is apply a method to each element in the array.
 
 JavaScript already allows you to use a [point free](https://en.wikipedia.org/wiki/Tacit_programming) style where you can just provide the name of a function and each element in the array will be passed to it, so we could do this:
 
@@ -31,7 +31,7 @@ const filterChecker = filter => filter.checked
 const anyChecked = filterTargets.some(filterChecker)
 ````
 
-But in this case, we have just shifted the problem to defining a trivial function, `filterChecker`, that simply calls a method on the object provided to it. The problem arises if you are doing a lot of OOP style coding, then you will often be calling methods on objects rather than top-level functions. I wondered if it was possible to implement something similar to Ruby's symbol to proc in Ruby Doo.
+But in this case, we have just shifted the problem to defining a trivial function, `filterChecker`, that simply calls a method on the object provided to it. The problem arises if you are doing a lot of OOP style coding, then you will often be calling methods on objects rather than top-level functions. I wondered if it was possible to implement something similar to Ruby's symbol to proc in Ruby Monkey.
 
 My first effort looked like this:
 
@@ -59,7 +59,7 @@ const anyChecked = filterTargets.some($`checked`)
 
 ... which, while not exactly the same, is much closer to the Ruby version.
 
-So I added it to an updated version of Ruby Doo, so now you can write this:
+So I added it to an updated version of Ruby Monkey, so now you can write this:
 
 
 ```javascript
