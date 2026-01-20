@@ -6,6 +6,7 @@ tag_class: tag
 max_image_size: 800
 default_layout_name: site
 default_link_name: links
+turbo: true
 
 dateFormat:
   weekday: short
