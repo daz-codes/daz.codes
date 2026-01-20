@@ -4,7 +4,7 @@ position: 2
 tags:
   - ruby
   - javascript
-  - rubydoobydoo
+  - rubymonkey
   - projects
 ---
 
