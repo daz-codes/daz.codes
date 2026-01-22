@@ -9,7 +9,7 @@ tags:
   - ruby
 ---
 
-Wahhhhh at work, somebody posted this JavaScript snippet, saying they liked how the `some` method worked:
+Yesterday at work, somebody posted this JavaScript snippet, saying they liked how the `some` method worked:
 
 ```javascript
 const anyChecked = filterTargets.some(filter => filter.checked)
