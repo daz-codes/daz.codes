@@ -239,4 +239,31 @@ h6 {
         margin-top: -1em;
         font-size: 1rem;
     }
+
+    /* Mobile: stacked cards without slants */
+    .project,
+    .book,
+    .post {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 1.5em;
+    }
+
+    .project:nth-child(odd),
+    .book:nth-child(odd),
+    .post:nth-child(odd),
+    .project:nth-child(even),
+    .book:nth-child(even),
+    .post:nth-child(even) {
+        transform: none;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .project:hover,
+    .book:hover,
+    .post:hover {
+        transform: scale(1.01);
+    }
 }
