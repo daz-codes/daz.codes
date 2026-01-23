@@ -133,6 +133,10 @@ h6 {
     text-transform: uppercase;
 }
 
+p {
+    font-size: 1.2rem;
+}
+
 .project h3 a,
 .book h3 a,
 .post h3 a {
