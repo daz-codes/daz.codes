@@ -31,10 +31,17 @@
             crossorigin="anonymous"
         ></script>
         <title>DAZ Codes || Template to Func</title>
-    <script type="module">import * as Turbo from 'https://esm.sh/@hotwired/turbo';</script>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+<link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+<link rel="preconnect" href="https://esm.sh" crossorigin>
+<link rel="dns-prefetch" href="https://esm.sh">
+<link rel="preload" href="/css/1-simple.css?v=1769182078135" as="style" />
+<link rel="preload" href="/css/2-custom.css?v=1769207079198" as="style" />
+<script type="module">import * as Turbo from 'https://esm.sh/@hotwired/turbo';</script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/monokai-sublime.min.css">
-<link rel="stylesheet" href="/css/1-simple.css" />
-<link rel="stylesheet" href="/css/2-custom.css" />
+<link rel="stylesheet" href="/css/1-simple.css?v=1769182078135" />
+<link rel="stylesheet" href="/css/2-custom.css?v=1769207079198" />
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </head>
     <body>
         <header class="sticky dropshadow">
@@ -54,7 +61,7 @@
 <h1 class="title brand-font gradient-text">Template to Func</h1>
 
 <div class="bold italic primary-text no-margin-y">
-    Written by <span class="secondary-text">DAZ</span> on 13/6/2025
+    Written by <span class="secondary-text">DAZ</span> on Fri, 13 Jun 2025
 </div>
 
 <div class="tags"><a class="tag" href="/tags/rubymonkey">rubymonkey</a><a class="tag" href="/tags/javascript">javascript</a><a class="tag" href="/tags/ruby">ruby</a></div>
@@ -81,29 +88,11 @@ const anyChecked = filterTargets.some(filterChecker)
 <pre><code class="language-javascript">const $ = method =&gt; obj =&gt; obj[method]
 </code></pre>
 <p>Now we can call it like this:</p>
-<pre><code class="language-javascript">const anyChecked = filterTargets.some(<div>{{ breadcrumbs }}</div>
-<h1 class="title brand-font gradient-text">{{ title }}</h1>
-
-<div class="bold italic primary-text no-margin-y">
-    Written by <span class="secondary-text">{{ author }}</span> on {{ date }}
-</div>
-
-<div class="tags">{{ links_to_tags }}</div>
-
-checked`)
+<pre><code class="language-javascript">const anyChecked = filterTargets.some($`checked`)
 </code></pre>
 <p>... which, while not exactly the same, is much closer to the Ruby version.</p>
 <p>So I added it to an updated version of Ruby Monkey, so now you can write this:</p>
-<pre><code class="language-javascript">const anyChecked = filter_targets.any(<div>{{ breadcrumbs }}</div>
-<h1 class="title brand-font gradient-text">{{ title }}</h1>
-
-<div class="bold italic primary-text no-margin-y">
-    Written by <span class="secondary-text">{{ author }}</span> on {{ date }}
-</div>
-
-<div class="tags">{{ links_to_tags }}</div>
-
-checked`)
+<pre><code class="language-javascript">const anyChecked = filter_targets.any($`checked`)
 </code></pre>
 <p>I&#39;m not sure how much it would get used, but it was fun to implement and is more useful when using Ruby Doo, which adds a lot more methods to JavaScript objects. I like the fact it uses tag template functions in a creative way and the use of the <code>$</code> is similar to the way it&#39;s used in <a href="https://medium.com/@abhishekprasadkashyap/exploring-template-literals-javascripts-powerful-string-interpolation-5f62c1f04c0a">template literal interpolation</a>. And I decided to call it <strong>Template to Func</strong>, in honour of the Ruby method that inspired it, since it uses template literals instead of symbols and functinos instead of procs.</p>
 

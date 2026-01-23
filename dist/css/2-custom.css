@@ -8,7 +8,7 @@
     /* Brand colors */
     --fmauve: #d8dcff;
     --daz-blue: #0f4c82;
-    --daz-yellow: #ffff40;
+    --daz-yellow: #feea63;
 
     /* Neon palette (both themes) */
     --neonRed: #f13943;
@@ -119,17 +119,17 @@ h1.logo:hover .codes {
 @media (prefers-color-scheme: dark) {
     :root {
         background: #2a2a2a;
-        --bg: #2a2a2a;
-        --bg-dark: #1a1a1a;
-        --bg-light: #383838;
+        --bg: #232323;
+        --bg-dark: #1d1d1d;
+        --bg-light: #2a2a2a;
         --text: #c0c0c0;
         --text-light: #e0e0e0;
         --primary: var(--daz-yellow);
         --secondary: var(--neonPink);
         --highlight: #444444;
         --accent-bg: #333333;
-        --card-bg: #1a1a1a;
-        --card-border: rgba(255, 255, 255, 0.05);
+        --card-bg: #1d1d1d;
+        --card-border: rgba(255, 255, 255, 0.15);
         --card-shadow: rgba(0, 0, 0, 0.4);
         --card-shadow-hover: rgba(0, 0, 0, 0.4);
 
@@ -147,7 +147,12 @@ h1.logo:hover .codes {
         color: var(--text);
     }
 
-    h1, h2, h3, h4, h5, h6 {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
         color: var(--text-light);
     }
 
