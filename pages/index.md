@@ -13,7 +13,7 @@ layout: false
 
 <p class="text-m bold"><span class="text-xl">👋</span> HEY! I'm Daz and I <span class="gradient-text text-xl">💜</span> coding!</p>
 
-<p class="text-s">I work as a software developer at <a href="https://yozu.co.uk">Yozu</a> where I use <strong>Ruby on Rails</strong>, but I also enjoy coding in <strong>JavaScript</strong> and <strong>Elixir</strong>.</p>
+<p class="text-s">I'm a software developer at <a href="https://yozu.co.uk">Yozu</a> where I use <strong>Ruby on Rails</strong>, but I also enjoy coding in <strong>JavaScript</strong> and <strong>Elixir</strong>.</p>
 
 👨🏼‍💻 Here are some of [my projects](/projects)
 
