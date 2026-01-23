@@ -1,0 +1,306 @@
+@import url("https://fonts.googleapis.com/css2?family=Boldonse&family=Codystar&display=swap");
+
+:root {
+    background: var(--fmauve);
+    --font-family: var(--sans-font);
+    --brand-font: "Boldonse";
+    --heading-font: "Jost";
+
+    --fmauve: #d8dcff;
+    --daz-blue: #0f4c82;
+    --primary: var(--daz-blue);
+    --secondary: var(--neonPink);
+    --highlight: var(--fmauve);
+
+    --neonRed: #f13943;
+    --neonOrange: #f7a100;
+    --neonYellow: #d8f640;
+    --neonGreen: #35f138;
+    --neonBlue: #13fbfb;
+    --neonPink: #fc6df7;
+    --neonPurple: #aa00d5;
+
+    --gradient: linear-gradient(
+        135deg,
+        var(--neonBlue),
+        var(--neonPink),
+        var(--neonYellow)
+    );
+
+    --header-gradient: radial-gradient(
+        farthest-corner circle at -30% 11% in oklch,
+        oklch(80% 0.3 0) 0%,
+        26%,
+        oklch(100% 0 217) 50% 46%,
+        100%,
+        oklch(100% 0 256) 100% 60%
+    );
+}
+body {
+    background: white;
+}
+
+body > header {
+    background: var(--header-gradient);
+    opacity: 0.85;
+    display: flow-root;
+}
+
+body > footer {
+    font-family: var(--sans-font);
+    background-image: linear-gradient(var(--bg), var(--fmauve));
+}
+
+header {
+    position: relative;
+}
+
+header > nav {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    font-family: var(--mono-font);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+h1.logo {
+    margin: 0;
+    padding: 0.3em;
+}
+
+h1.logo .daz {
+    color: var(--daz-blue);
+    font-family: "Boldonse";
+    font-size: 3rem;
+    letter-spacing: 0.1em;
+    transform: rotate(60deg);
+}
+
+h1.logo .codes {
+    color: var(--neonPink);
+    font-size: 0.6em;
+    font-weight: bold;
+    text-transform: lowercase;
+    position: relative;
+    top: -0.6em;
+    left: -0.3em;
+}
+
+h1.logo:hover .daz {
+    color: var(--neonPink);
+}
+
+h1.logo:hover .codes {
+    color: var(--daz-blue);
+}
+
+h1.logo a {
+    text-decoration: none;
+}
+
+h1.logo a:hover {
+    background: none;
+}
+
+h1.title {
+    line-height: 1.4;
+}
+
+img.daz {
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    border: 4px solid var(--accent-bg);
+    max-width: 300px;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+main {
+    text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+.project h3 a,
+.book h3 a,
+.post h3 a {
+    text-decoration: none;
+    position: relative;
+    display: block;
+    padding-bottom: 8px;
+}
+
+.project h3 a::after,
+.book h3 a::after,
+.post h3 a::after {
+    content: "";
+    position: absolute;
+    left: -4px;
+    bottom: -2px;
+    width: 100%;
+    height: 16px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.project:nth-child(odd) h3 a::after,
+.book:nth-child(odd) h3 a::after,
+.post:nth-child(odd) h3 a::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 16' preserveAspectRatio='none'%3E%3Cdefs%3E%3ClinearGradient id='fade' x1='0%25' y1='0%25' x2='100%25' y2='0%25'%3E%3Cstop offset='0%25' stop-color='%23fc6df7' stop-opacity='0.85'/%3E%3Cstop offset='65%25' stop-color='%23fc6df7' stop-opacity='0.5'/%3E%3Cstop offset='100%25' stop-color='%23fc6df7' stop-opacity='0'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M0,13 Q65,1 200,11' stroke='url(%23fade)' stroke-width='7' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+}
+
+.project:nth-child(even) h3 a::after,
+.book:nth-child(even) h3 a::after,
+.post:nth-child(even) h3 a::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 16' preserveAspectRatio='none'%3E%3Cdefs%3E%3ClinearGradient id='fade' x1='0%25' y1='0%25' x2='100%25' y2='0%25'%3E%3Cstop offset='0%25' stop-color='%2313fbfb' stop-opacity='0.85'/%3E%3Cstop offset='65%25' stop-color='%2313fbfb' stop-opacity='0.5'/%3E%3Cstop offset='100%25' stop-color='%2313fbfb' stop-opacity='0'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M0,13 Q65,1 200,11' stroke='url(%23fade)' stroke-width='7' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+}
+
+.project h3 a:hover,
+.book h3 a:hover,
+.post h3 a:hover {
+    color: var(--secondary);
+    background: none;
+}
+
+.project,
+.book,
+.post {
+    background: rgb(255 255 255 / 0.9);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    padding: 1em 1.5em;
+    margin-bottom: -0.5em;
+    box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.1);
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+    width: 85%;
+}
+
+/* Higgledy-piggledy alternating tilts and alignment */
+.project:nth-child(odd),
+.book:nth-child(odd),
+.post:nth-child(odd) {
+    transform: rotate(-1.5deg) translateX(-20px);
+    margin-right: auto;
+}
+
+.project:nth-child(even),
+.book:nth-child(even),
+.post:nth-child(even) {
+    transform: rotate(1.5deg) translateX(-20px);
+    margin-left: auto;
+}
+
+.project:hover,
+.book:hover,
+.post:hover {
+    transform: rotate(0deg) scale(1.02);
+    box-shadow: 4px 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.book img {
+    max-width: 180px;
+}
+
+.book section {
+    display: flex;
+    justify-items: center;
+    align-items: flex-start;
+}
+
+.swifty_breadcrumb {
+    text-decoration: none;
+    font-family: var(--mono-font);
+    font-weight: bold;
+}
+
+.swifty_breadcrumb:hover {
+    background: none;
+    color: var(--neonPink);
+}
+
+.tag:hover {
+    background: var(--daz-blue);
+    border-color: var(--daz-blue);
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    p.text-xl.gradient-text.text-right.brand-font.bold.uppercase {
+        text-align: center;
+    }
+
+    .grid {
+        gap: 0;
+    }
+
+    h1.logo .daz {
+        font-size: 2.5rem;
+    }
+
+    h1.logo .codes {
+        font-size: 0.5em;
+    }
+
+    header > nav {
+        position: static;
+        text-align: right;
+        padding: 0;
+        margin: 0;
+        margin-top: -1em;
+        font-size: 1rem;
+    }
+
+    /* Mobile: stacked cards without slants */
+    .project,
+    .book,
+    .post {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 1.5em;
+    }
+
+    .project:nth-child(odd),
+    .book:nth-child(odd),
+    .post:nth-child(odd),
+    .project:nth-child(even),
+    .book:nth-child(even),
+    .post:nth-child(even) {
+        transform: none;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .project:hover,
+    .book:hover,
+    .post:hover {
+        transform: scale(1.01);
+    }
+
+    .book section {
+        display: block;
+    }
+
+    .book img {
+        max-width: 90%;
+        margin-bottom: 1rem;
+    }
+}
