@@ -1,17 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Boldonse&family=Codystar&display=swap");
 
 :root {
-    background: var(--fmauve);
     --font-family: var(--sans-font);
     --brand-font: "Boldonse";
     --heading-font: "Jost";
 
+    /* Brand colors */
     --fmauve: #d8dcff;
     --daz-blue: #0f4c82;
-    --primary: var(--daz-blue);
-    --secondary: var(--neonPink);
-    --highlight: var(--fmauve);
+    --daz-yellow: #ffff40;
 
+    /* Neon palette (both themes) */
     --neonRed: #f13943;
     --neonOrange: #f7a100;
     --neonYellow: #d8f640;
@@ -27,6 +26,22 @@
         var(--neonYellow)
     );
 
+    /* Light theme (default) */
+    background: var(--fmauve);
+    --bg: #fff;
+    --bg-dark: #f5f5f5;
+    --bg-light: #fff;
+    --text: var(--carbon);
+    --text-light: var(--black);
+    --primary: var(--daz-blue);
+    --secondary: var(--neonPink);
+    --highlight: var(--fmauve);
+    --accent-bg: #ccedf5;
+    --card-bg: rgb(255 255 255 / 0.9);
+    --card-border: rgba(0, 0, 0, 0.08);
+    --card-shadow: rgba(0, 0, 0, 0.1);
+    --card-shadow-hover: rgba(0, 0, 0, 0.15);
+
     --header-gradient: radial-gradient(
         farthest-corner circle at -30% 11% in oklch,
         oklch(80% 0.3 0) 0%,
@@ -36,10 +51,12 @@
         oklch(100% 0 256) 100% 60%
     );
 }
+
 body {
-    background: white;
+    background: var(--bg);
 }
 
+/* Light theme header */
 body > header {
     background: var(--header-gradient);
     opacity: 0.85;
@@ -51,6 +68,126 @@ body > footer {
     background-image: linear-gradient(var(--bg), var(--fmauve));
 }
 
+/* Light theme logo */
+h1.logo .daz {
+    color: var(--daz-blue);
+    font-family: "Boldonse";
+    font-size: 3rem;
+    letter-spacing: 0.1em;
+    transform: rotate(60deg);
+}
+
+h1.logo:hover .daz {
+    color: var(--neonPink);
+}
+
+h1.logo:hover .codes {
+    color: var(--daz-blue);
+}
+
+/* Light theme tags */
+.tag:hover {
+    background: var(--daz-blue);
+    border-color: var(--daz-blue);
+    color: white;
+}
+
+/* Light theme cards */
+.project,
+.book,
+.post {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 8px;
+    padding: 1em 1.5em;
+    margin-bottom: -0.5em;
+    box-shadow: 2px 3px 8px var(--card-shadow);
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+    width: 85%;
+}
+
+.project:hover,
+.book:hover,
+.post:hover {
+    transform: rotate(0deg) scale(1.02);
+    box-shadow: 4px 6px 16px var(--card-shadow-hover);
+}
+
+/* ==================== DARK THEME ==================== */
+@media (prefers-color-scheme: dark) {
+    :root {
+        background: #2a2a2a;
+        --bg: #2a2a2a;
+        --bg-dark: #1a1a1a;
+        --bg-light: #383838;
+        --text: #c0c0c0;
+        --text-light: #e0e0e0;
+        --primary: var(--daz-yellow);
+        --secondary: var(--neonPink);
+        --highlight: #444444;
+        --accent-bg: #333333;
+        --card-bg: #1a1a1a;
+        --card-border: rgba(255, 255, 255, 0.05);
+        --card-shadow: rgba(0, 0, 0, 0.4);
+        --card-shadow-hover: rgba(0, 0, 0, 0.4);
+
+        --header-gradient: radial-gradient(
+            farthest-corner circle at -30% 11% in oklch,
+            oklch(60% 0.2 90) 0%,
+            oklch(40% 0.15 330) 30%,
+            oklch(20% 0.05 250) 60%,
+            #1a1a1a 100%
+        );
+    }
+
+    body {
+        background: var(--bg);
+        color: var(--text);
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        color: var(--text-light);
+    }
+
+    a {
+        color: var(--daz-yellow);
+    }
+
+    a:hover {
+        color: var(--neonPink);
+    }
+
+    body > header {
+        background: var(--header-gradient);
+        opacity: 1;
+    }
+
+    body > footer {
+        background-image: linear-gradient(var(--bg), var(--bg-dark));
+    }
+
+    h1.logo .daz {
+        color: var(--daz-yellow);
+    }
+
+    h1.logo:hover .daz {
+        color: var(--neonPink);
+    }
+
+    h1.logo:hover .codes {
+        color: var(--daz-yellow);
+    }
+
+    .tag:hover {
+        background: var(--daz-yellow);
+        border-color: var(--daz-yellow);
+        color: var(--bg-dark);
+    }
+}
+
+/* ==================== SHARED STYLES ==================== */
 header {
     position: relative;
 }
@@ -69,14 +206,6 @@ h1.logo {
     padding: 0.3em;
 }
 
-h1.logo .daz {
-    color: var(--daz-blue);
-    font-family: "Boldonse";
-    font-size: 3rem;
-    letter-spacing: 0.1em;
-    transform: rotate(60deg);
-}
-
 h1.logo .codes {
     color: var(--neonPink);
     font-size: 0.6em;
@@ -85,14 +214,6 @@ h1.logo .codes {
     position: relative;
     top: -0.6em;
     left: -0.3em;
-}
-
-h1.logo:hover .daz {
-    color: var(--neonPink);
-}
-
-h1.logo:hover .codes {
-    color: var(--daz-blue);
 }
 
 h1.logo a {
@@ -178,21 +299,6 @@ p {
     background: none;
 }
 
-.project,
-.book,
-.post {
-    background: rgb(255 255 255 / 0.9);
-    border: 1px solid rgba(0, 0, 0, 0.08);
-    border-radius: 8px;
-    padding: 1em 1.5em;
-    margin-bottom: -0.5em;
-    box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.1);
-    transition:
-        transform 0.2s ease,
-        box-shadow 0.2s ease;
-    width: 85%;
-}
-
 /* Higgledy-piggledy alternating tilts and alignment */
 .project:nth-child(odd),
 .book:nth-child(odd),
@@ -206,13 +312,6 @@ p {
 .post:nth-child(even) {
     transform: rotate(1.5deg) translateX(-20px);
     margin-left: auto;
-}
-
-.project:hover,
-.book:hover,
-.post:hover {
-    transform: rotate(0deg) scale(1.02);
-    box-shadow: 4px 6px 16px rgba(0, 0, 0, 0.15);
 }
 
 .book img {
@@ -234,12 +333,6 @@ p {
 .swifty_breadcrumb:hover {
     background: none;
     color: var(--neonPink);
-}
-
-.tag:hover {
-    background: var(--daz-blue);
-    border-color: var(--daz-blue);
-    color: white;
 }
 
 @media screen and (max-width: 600px) {
