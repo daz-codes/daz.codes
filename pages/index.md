@@ -13,7 +13,7 @@ layout: false
 
 <p class="text-m bold"><span class="text-xl">👋</span> HEY! I'm Daz and I <span class="gradient-text text-xl">💜</span> coding!</p>
 
-<p class="text-s">I work as a software developer at <a href="https://yozu.co.uk">Yozu</a> where I mainly use <strong>Ruby on Rails</strong>. I also enjoy coding in <strong>JavaScript</strong> and <strong>Elixir</strong>.</p>
+<p class="text-s">I work as a software developer at <a href="https://yozu.co.uk">Yozu</a> where I use <strong>Ruby on Rails</strong>, but I also enjoy coding in <strong>JavaScript</strong> and <strong>Elixir</strong>.</p>
 
 👨🏼‍💻 Here are some of [my projects](/projects)
 
@@ -21,6 +21,8 @@ layout: false
 
 📝 I also write a [blog](/blog) and [ articles](https://www.sitepoint.com/author/djones/)
 
-<i class="fa-brands fa-github"></i> [GitHub](https://github.com/daz-codes) | <i class="fa-brands fa-linkedin"></i> [LinkedIn](https://www.linkedin.com/in/daz-codes/)
+<i class="fa-brands fa-github"></i> You can see my code on [GitHub](https://github.com/daz-codes)
+
+<i class="fa-brands fa-linkedin"></i> Connect with me on [LinkedIn](https://www.linkedin.com/in/daz-codes/)
 
 </div>
