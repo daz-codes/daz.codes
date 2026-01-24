@@ -3,6 +3,7 @@ title: Advent of Code 2025
 author: DAZ
 summary: My thoughts on the Advent of Code challenges at the end of last year
 date: 22/1/2026
+draft: true
 tags:
   - rubymonkey
   - javascript
