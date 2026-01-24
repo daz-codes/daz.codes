@@ -8,7 +8,9 @@
     /* Brand colors */
     --fmauve: #d8dcff;
     --daz-blue: #0f4c82;
+    --daz-blue-highlight: #02d1fa;
     --daz-yellow: #f2fcb1;
+    --daz-yellow-highlight: #d7f224;
 
     /* Neon palette (both themes) */
     --neonRed: #f13943;
@@ -83,6 +85,15 @@ h1.logo:hover .daz {
 
 h1.logo:hover .codes {
     color: var(--daz-blue);
+}
+
+/* Light theme links */
+a {
+    color: var(--daz-blue);
+}
+
+a:hover {
+    color: var(--daz-blue-highlight);
 }
 
 /* Light theme tags */
@@ -161,12 +172,12 @@ h1.logo:hover .codes {
     }
 
     a:hover {
-        color: var(--neonPink);
+        color: var(--daz-yellow-highlight);
     }
 
     body > header {
         background: var(--header-gradient);
-        opacity: 1;
+        opacity: 0.85;
     }
 
     body > footer {

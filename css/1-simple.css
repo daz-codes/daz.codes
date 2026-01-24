@@ -331,7 +331,6 @@ a:visited {
 }
 
 a:hover {
-    background: var(--highlight);
 }
 
 button,
