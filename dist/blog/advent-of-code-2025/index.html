@@ -41,7 +41,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/monokai-sublime.min.css">
 <link rel="stylesheet" href="/css/1-simple.css?v=1769276212630" />
 <link rel="stylesheet" href="/css/2-custom.css?v=1769335773710" />
-<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
 </head>
     <body>
         <header class="sticky dropshadow">
@@ -61,7 +61,7 @@
 <h1 class="title brand-font gradient-text">Advent of Code 2025</h1>
 
 <div class="bold italic primary-text no-margin-y">
-    Written by <span class="secondary-text">DAZ</span> on Thu, 22 Jan 2026
+    Written by <span class="secondary-text">DAZ</span> on Sun, 25 Jan 2026
 </div>
 
 <div class="tags"><a class="tag" href="/tags/rubymonkey">rubymonkey</a><a class="tag" href="/tags/javascript">javascript</a><a class="tag" href="/tags/ruby">ruby</a><a class="tag" href="/tags/adventofcode">adventofcode</a><a class="tag" href="/tags/aoc">aoc</a></div>
@@ -69,9 +69,7 @@
 <p>I&#39;d never heard of Advent of Code before I joined Yozu, so this was the second time I had taken part in trying to complete the challenges. Last year I achieved 42/50 of the stars available.</p>
 <p>The 2025 Advent of Code changed the format a little bit from the year before. There were only 12 days of challenges rather than the usual 25. These took place from December 1st to December 12th, so there was still one every day and it was a tough pace to keep up with. Each day still had a part a (usually quite easy) and part b (harder with varying degrees of difficulty), with a star awarded for completing each part, making a total of 24 stars available this year.</p>
 <p>I liked this new format - it has a nice link to the Twelve Days of Christmas and made it much more manageable to keep up with the challenges. It also meant there was more time to complete any unfinished challenges in the weeks before Christmas</p>
-<p>This year I decided to use Ruby Monkey to complete the challenges. I used JavaScript last year, but did some in Ruby and found that Ruby had some really nice methods that helped make solving the challenge easier and more enjoyable. In fact this was one of the reasons I decided to make Ruby Monkey. Completing this challenges using the library would show that it was able to be used to write real code.
-Loved it - some really nice Code
-Give an example</p>
+<p>This year I decided to use Ruby Monkey to complete the challenges. I used JavaScript last year, but did some in Ruby and found that Ruby had some really nice methods that helped make solving the challenge easier and more enjoyable. In fact this was one of the reasons I decided to make Ruby Monkey. Completing this challenges using the library would show that it was able to be used to write real code.</p>
 <p>For example this was some of the code I used for the Day 12 challenge:</p>
 <pre><code class="language-javascript">const day12 = data =&gt; {
   const regions = data.trim().split(&quot;\n&quot;)
@@ -83,15 +81,12 @@ Give an example</p>
   })
 }
 </code></pre>
-<p>This uses my <a href="">template to func</a> function with <code>map</code> and <code>to_</code> to convert an array of number strings to type <code>Number</code>. It also uses the <code>count</code> Array method, which is much more intuitive than using <code>reduce</code> with some unitelligable logic or using a <code>for</code> loop with imperative code. Speak of <code>reduce</code>, I&#39;ve also used <code>inject</code> which is just an alias for <code>reduce</code> and also used the <code>sum</code> method to find the total of all the results.</p>
+<p>This uses my <a href="/blog/tempate-to-func">template to func</a> function to pass each element in the <code>dimensions</code> and <code>presents</code> arrays to the<code>to_i</code> method to convert an a number string to type <code>Number</code> (so &quot;24&quot; will become <code>42</code>). It also uses the <code>count</code> Array method, which is much more intuitive than using <code>reduce</code> with some unitelligable logic or using a <code>for</code> loop with imperative code. Speak of <code>reduce</code>, I&#39;ve also used <code>inject</code> which is just an alias for <code>reduce</code> and also used the <code>sum</code> method to find the total of all the results.</p>
 <p>Overall I just feel that this makes the code look nicer as well as being much easier to work with. A big win for Ruby Monkey!</p>
 <p>The actual challenges were a good standard. I usually managed to get part A smushed within an hour of looking at it in the morning and then would usually spend the rest of the day on part B. I&#39;d often have to think about it then try some ideas out before finally getting a solution that worked. A frustrating situation is when your code works for the example data given, but not for the actual challenge data, usually due to some edge cases.</p>
-<p>Then suddenly on Days 9 and 10, the level of challenged increased exponentially! Part B for both days was ridiculously hard!
-Techniques used
-Developed my own mini simultaneous equation solver!</p>
-<p>Yozu leaderboard</p>
-<p>Finished them all for the first time.
-The last star is the easiest!</p>
+<p>Then suddenly on Days 9 and 10, the level of challenged increased exponentially! Part B for both days was ridiculously hard! I quickly realised that on Day 9 I could reduce the problem down to simultaneous equations but didn&#39;t count on there being free variables and needing to implement my own row reduciton and Gaussian elimination functions. It took a long time to get right, especially having to ensure that only positive integers were used, but I was really pleased when I finally got this right. Day 10 also called for some maths. I needed to implement a function that used ray casting to check if a point was inside a shape or not, but there were so many edge cases and I hadn&#39;t counted on the strange way the shapes could be constructed. I eventually got something working with the test data but couldn&#39;t get it to solve the actual problem. In the end I was grateful for numerous Reddit posts that gave more sample data to highlight the edge cases. I wasn&#39;t as pleased with my solution to this, it seemed a bit hacky, but this was the second to last problem I needed to solve and by that point I just wanted to get it finished.</p>
+<p>The last challenge that needed to be solved was part B on the last day. This is actually the easiest to solve as it just requires you to have solved all the other challenges and then click on a link to get the star. This meant that I got all the stars for the first time!</p>
+<p>The devs at <a href="https://yozu.co.uk">Yozu</a> have a leaderboard for Advent of code every year and it can get really competitive (well I do anyway!) I love trying to be the first to solve the challenge that day and would get up early each day to try and be the first to get both stars! In the end I managed to finish at the top of tbe table which I was really pleased about given how talented all the devs at Yozu are. Hopefully I&#39;ll be able to keep up my form next year as well!</p>
 
 </main>
         <footer>

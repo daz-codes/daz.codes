@@ -5,8 +5,17 @@
     <link>/blog</link>
     <description>My thoughts about coding and anything else</description>
     <language>en</language>
-    <lastBuildDate>Sun, 25 Jan 2026 20:47:07 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 25 Jan 2026 21:03:01 GMT</lastBuildDate>
     <atom:link href="/blog/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Advent of Code 2025</title>
+      <link>/blog/advent-of-code-2025</link>
+      <guid isPermaLink="true">/blog/advent-of-code-2025</guid>
+      <pubDate>Sun, 25 Jan 2026 00:00:00 GMT</pubDate>
+      <description>I&apos;d never heard of Advent of Code before I joined Yozu, so this was the second time I had taken part in trying to complete the challenges. Last year I achieved 42/50 of the stars available.
+
+The 2025 Advent of Code changed the format a little bit from the year before. There were only 12 days of chal...</description>
+    </item>
     <item>
       <title>Template to Func</title>
       <link>/blog/template-to-func</link>
