@@ -1,12 +1,12 @@
 <div class="book">
 
-  ### [{{ title }}]({{ url }})
+  ### [<%= title %>](<%= url %>)
 
   <section>
-  <img src="{{ image }}" alt="{{ alt }}" class="dropshadow">
+  <img src="<%= image %>" alt="<%= alt %>" class="dropshadow">
 
   <p class="padding-x no-margin">
-  {{ summary }}
+  <%= summary %>
   </p>
 
   </section>

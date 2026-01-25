@@ -30,7 +30,7 @@
             src="https://kit.fontawesome.com/6b5e91c70a.js"
             crossorigin="anonymous"
         ></script>
-        <title>{{ sitename }} || {{ title }}</title>
+        <title><%= sitename %> || {{ title }}</title>
     </head>
     <body>
         <header class="sticky dropshadow">
@@ -46,7 +46,7 @@
                 <a href="/books" title="my books">Books</a>
             </nav>
         </header>
-        <main class="container">{{ content }}</main>
+        <main class="container"><%= content %></main>
         <footer>
             <p class="text-xs">
                 This site was made with

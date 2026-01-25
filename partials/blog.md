@@ -1,9 +1,9 @@
 <div class="post">
 
-### [{{ title }}]({{ url }})
+### [<%= title %>](<%= url %>)
 
-{{ partial: blog_info }}
+<%= partial: blog_info %>
 
-{{ summary }}
+<%= summary %>
 
 </div>
