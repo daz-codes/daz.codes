@@ -1,4 +1,5 @@
 ---
+title: PR!OR!TY!
 summary: A simple task manager to help you focus on what's important.
 position: 4
 tags:

@@ -11,7 +11,7 @@ tags:
   - aoc
 ---
 
-I'd never heard of Advent of Code before I joined Yozu, so this was the second time I had taken part in trying to complete the challenges. Last year I achieved 42/50 of the stars available.
+This was the second time I've taken part in the Advent of Code challenge. Last year I achieved 42/50 of the stars available.
 
 The 2025 Advent of Code changed the format a little bit from the year before. There were only 12 days of challenges rather than the usual 25. These took place from December 1st to December 12th, so there was still one every day and it was a tough pace to keep up with. Each day still had a part a (usually quite easy) and part b (harder with varying degrees of difficulty), with a star awarded for completing each part, making a total of 24 stars available this year.
 
