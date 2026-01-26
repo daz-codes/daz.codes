@@ -8,7 +8,7 @@ tags:
   - javascript
 ---
 
-<img src="{{ image }}" alt="{{ alt }}" class="dropshadow">
+<%= partial: book_pic %>
 
 JavaScript is a must-have skill for all web developers.
 

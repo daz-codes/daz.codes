@@ -9,7 +9,7 @@ tags:
   - books
 ---
 
-<img src="{{ image }}" alt="{{ alt }}" class="dropshadow">
+<%= partial: book_pic %>
 
 This easy-to-follow, practical, and fun guide is the perfect place to start on your coding journey.
 

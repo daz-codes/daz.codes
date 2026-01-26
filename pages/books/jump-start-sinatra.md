@@ -9,7 +9,7 @@ tags:
   - books
 ---
 
-<img src="{{ image }}" alt="{{ alt }}" class="dropshadow">
+<%= partial: book_pic %>
 
 This short SitePoint book provides readers with a fun and yet practical introduction to Sinatra, a framework that makes web development with Ruby extremely simple.
 

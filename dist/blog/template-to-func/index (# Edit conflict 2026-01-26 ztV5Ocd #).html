@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta property="og:title" content="Template to Func">
+  <meta property="og:site_name" content="DAZ Codes">
+  <meta property="og:type" content="article">
+  <meta property="og:description" content="A neat little helper function that mimics the Symbol to Proc method in Ruby">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Template to Func">
+  <meta name="twitter:description" content="A neat little helper function that mimics the Symbol to Proc method in Ruby">
+  <meta property="article:author" content="DAZ">
+  <meta property="article:published_time" content="2025-06-12T23:00:00.000Z">
+  <meta property="article:tag" content="rubymonkey">
+  <meta property="article:tag" content="javascript">
+  <meta property="article:tag" content="ruby">
+        <script
+            src="https://kit.fontawesome.com/6b5e91c70a.js"
+            crossorigin="anonymous"
+        ></script>
+        <title>DAZ Codes</title>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+<link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+<link rel="preconnect" href="https://esm.sh" crossorigin>
+<link rel="dns-prefetch" href="https://esm.sh">
+<link rel="preload" href="/css/1-simple.css?v=1769276212630" as="style" />
+<link rel="preload" href="/css/2-custom.css?v=1769335773710" as="style" />
+<script type="module">import * as Turbo from 'https://esm.sh/@hotwired/turbo';</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/monokai-sublime.min.css">
+<link rel="stylesheet" href="/css/1-simple.css?v=1769276212630" />
+<link rel="stylesheet" href="/css/2-custom.css?v=1769335773710" />
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</head>
+    <body>
+        <header class="sticky dropshadow">
+            <h1 class="logo text-center">
+                <a href="/" title="home"
+                    ><span class="daz">DAZ</span
+                    ><span class="codes mono-font">&lt;/codes&gt;</span></a
+                >
+            </h1>
+            <nav>
+                <a href="/blog" title="my blog">Blog</a>
+                <a href="/projects" title="my projects">Projects</a>
+                <a href="/books" title="my books">Books</a>
+            </nav>
+        </header>
+        <main class="container"><div><a class="swifty_breadcrumb" href="/">Home</a> &raquo; <a class="swifty_breadcrumb" href="/blog">Blog</a> &raquo; <a class="swifty_breadcrumb" href="/blog/template-to-func">Template To Func</a></div>
+<h1 class="title brand-font gradient-text">Template to Func</h1>
+
+<div class="bold italic primary-text no-margin-y">
+    Written by <span class="secondary-text">DAZ</span> on Fri, 13 Jun 2025
+</div>
+
+<div class="tags"><a class="tag" href="/tags/rubymonkey">rubymonkey</a><a class="tag" href="/tags/javascript">javascript</a><a class="tag" href="/tags/ruby">ruby</a></div>
+
+<p>Yesterday at work, somebody posted this JavaScript snippet, saying they liked how the <code>some</code> method worked:</p>
+<pre><code class="language-javascript">const anyChecked = filterTargets.some(filter =&gt; filter.checked)
+</code></pre>
+<p>Someone replied, saying they preferred how to do it in Ruby:</p>
+<pre><code class="language-ruby">any_checked = filter_targets.any?(&amp;:checked)
+</code></pre>
+<p>I had already implemented the <code>any</code> in my <a href="/projects/ruby-monkey">Ruby Monkey</a> library, but I also like the way you can use the <a href="https://www.mintbit.com/blog/rubys-symbol-to-proc-shorthand-method-name/">symbol to proc</a> shorthand notation in Ruby to automatically call a method on each element passed to it. Interesting fact that this was originally a Rails method that was then merged into Ruby core as it proved so useful. It does seems a lot of needless code writing <code>filter =&gt; filter.checked</code> when all you want to do is apply a method to each element in the array.</p>
+<p>JavaScript already allows you to use a <a href="https://en.wikipedia.org/wiki/Tacit_programming">point free</a> style where you can just provide the name of a function and each element in the array will be passed to it, so we could do this:</p>
+<pre><code class="language-javascript">const filterChecker = filter =&gt; filter.checked
+const anyChecked = filterTargets.some(filterChecker)
+</code></pre>
+<p>But in this case, we have just shifted the problem to defining a trivial function, <code>filterChecker</code>, that simply calls a method on the object provided to it. The problem arises if you are doing a lot of OOP style coding, then you will often be calling methods on objects rather than top-level functions. I wondered if it was possible to implement something similar to Ruby&#39;s symbol to proc in Ruby Monkey.</p>
+<p>My first effort looked like this:</p>
+<pre><code class="language-javascript">const sym_to_proc = method =&gt; obj =&gt; obj[method]
+</code></pre>
+<p>This is a <a href="https://javascript.info/currying-partials">curried</a> function that uses <a href="https://barker.codes/blog/currying-and-partial-application-in-javascript/">partial application</a> to return another function that can then be passed as a callback to the array method. This means you coudl write this:</p>
+<pre><code class="language-javascript">const anyChecked = filterTargets.some(sym_to_proc(&quot;checked&quot;))
+</code></pre>
+<p>This looks a bit messy though ... the Ruby version uses the ampersand to start the call and it&#39;s just followed by a symbol. Having to use the extra parentheses to call the function is also messy. So I got creative ... JavaScript doesn&#39;t have symbols, but it <em>does</em> have <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals">template literals</a>, and they don&#39;t require parentheses when you call a function with them as the argument (<a href="https://codeburst.io/javascript-what-are-tag-functions-97682f29521b">tag functions</a>). Unfortunately you can&#39;t use an ampersand for a function name, but as jQuery showed, you can use  <code>$</code>, so I rewrote the function as this:</p>
+<pre><code class="language-javascript">const $ = method =&gt; obj =&gt; obj[method]
+</code></pre>
+<p>Now we can call it like this:</p>
+<pre><code class="language-javascript">const anyChecked = filterTargets.some($`checked`)
+</code></pre>
+<p>... which, while not exactly the same, is much closer to the Ruby version.</p>
+<p>So I added it to an updated version of Ruby Monkey, so now you can write this:</p>
+<pre><code class="language-javascript">const anyChecked = filter_targets.any($`checked`)
+</code></pre>
+<p>I&#39;m not sure how much it would get used, but it was fun to implement and is more useful when using Ruby Doo, which adds a lot more methods to JavaScript objects. I like the fact it uses tag template functions in a creative way and the use of the <code>$</code> is similar to the way it&#39;s used in <a href="https://medium.com/@abhishekprasadkashyap/exploring-template-literals-javascripts-powerful-string-interpolation-5f62c1f04c0a">template literal interpolation</a>. And I decided to call it <strong>Template to Func</strong>, in honour of the Ruby method that inspired it, since it uses template literals instead of symbols and functinos instead of procs.</p>
+
+</main>
+        <footer>
+            <p class="text-xs">
+                This site was made with
+                <a
+                    href="https://swifty-oo3v.onrender.com"
+                    title="Swifty, the super speedy static site generator"
+                    >Swifty</a
+                >, the super speedy static site generator &copy; DAZ 2026
+            </p>
+        </footer>
+    </body>
+</html>

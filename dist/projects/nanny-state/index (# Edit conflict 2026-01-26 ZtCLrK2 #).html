@@ -5,11 +5,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta property="og:title" content="Pages tagged with Game">
+        <meta property="og:title" content="Nanny State">
   <meta property="og:site_name" content="DAZ Codes">
   <meta property="og:type" content="article">
+  <meta property="og:description" content="A tiny state library for building reactive UI.">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Pages tagged with Game">
+  <meta name="twitter:title" content="Nanny State">
+  <meta name="twitter:description" content="A tiny state library for building reactive UI.">
+  <meta property="article:tag" content="state">
+  <meta property="article:tag" content="javascript">
+  <meta property="article:tag" content="projects">
         <script
             src="https://kit.fontawesome.com/6b5e91c70a.js"
             crossorigin="anonymous"
@@ -25,7 +30,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/monokai-sublime.min.css">
 <link rel="stylesheet" href="/css/1-simple.css?v=1769276212630" />
 <link rel="stylesheet" href="/css/2-custom.css?v=1769335773710" />
-
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </head>
     <body>
         <header class="sticky dropshadow">
@@ -41,11 +46,38 @@
                 <a href="/books" title="my books">Books</a>
             </nav>
         </header>
-        <main class="container"><div><a class="swifty_breadcrumb" href="/">Home</a> &raquo; <a class="swifty_breadcrumb" href="/tags">Tags</a> &raquo; <a class="swifty_breadcrumb" href="/tags/game">game</a></div>
+        <main class="container"><div><a class="swifty_breadcrumb" href="/">Home</a> &raquo; <a class="swifty_breadcrumb" href="/projects">Projects</a> &raquo; <a class="swifty_breadcrumb" href="/projects/nanny-state">Nanny State</a></div>
 
-<h1 class="title brand-font gradient-text">Pages tagged with Game</h1>
+<h1 class="title brand-font gradient-text">Nanny State</h1>
 
-<li><a href="/projects/fruit-and-veg-cipher" class="swifty_link">Fruit And Veg Cipher</a></li>
+<p><a href="https://github.com/daz4126/Nanny-State">source code</a></p>
+<p>NANNY STATE is a small reactive state library that makes it simple to build speedy web apps.</p>
+<p>It does everything React does, but without the build process, JSX or a virtual DOM ... and it&#39;s a fraction of the size!</p>
+<p>SMALL - less than 4kb minified and zipped</p>
+<p>SIMPLE - a single state object with some useful helper methods</p>
+<p>SPEEDY - automatic page renders that are blazingly fast</p>
+<p>It uses a purely declarative notation and everything is written in Vanilla JS and HTML. To get started, just set the initial state and write the view - check out the example below:</p>
+<pre><code class="language-javascript">// A single import is all that&#39;s needed
+import Nanny from &quot;nanny-state&quot;
+
+// View is a tag function that accepts the state as a parameter and returns plain old HTML
+const View = state =&gt; state.HTML`
+  &lt;h1&gt;❤️ ${state.count}&lt;/h1&gt;
+  &lt;div&gt;
+    &lt;button onclick=${event =&gt; state.Decrement(&quot;count&quot;)}&gt;👎&lt;/button&gt;
+    &lt;button onclick=${event =&gt; state.Increment(&quot;count&quot;)}&gt;👍&lt;/button&gt;
+  &lt;/div&gt;`
+
+// the initial State is just a plain old object 
+const State = { 
+  count: 0, 
+  View
+}
+
+// Start the Nanny State!
+Nanny(State)
+</code></pre>
+
 </main>
         <footer>
             <p class="text-xs">
