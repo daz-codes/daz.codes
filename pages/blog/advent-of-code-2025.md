@@ -33,7 +33,7 @@ const day12 = data => {
 }
 ```
 
-This uses my [template to func](/blog/tempate-to-func) function to pass each element in the `dimensions` and `presents` arrays to the`to_i` method to convert an a number string to type `Number` (so "24" will become `42`). It also uses the `count` Array method, which is much more intuitive than using `reduce` with some unitelligable logic or using a `for` loop with imperative code. Speak of `reduce`, I've also used `inject` which is just an alias for `reduce` and also used the `sum` method to find the total of all the results.
+This uses my [template to func](/blog/template-to-func) function to pass each element in the `dimensions` and `presents` arrays to the`to_i` method to convert an a number string to type `Number` (so "24" will become `42`). It also uses the `count` Array method, which is much more intuitive than using `reduce` with some unitelligable logic or using a `for` loop with imperative code. Speak of `reduce`, I've also used `inject` which is just an alias for `reduce` and also used the `sum` method to find the total of all the results.
 
 Overall I just feel that this makes the code look nicer as well as being much easier to work with. A big win for Ruby Monkey!
 
