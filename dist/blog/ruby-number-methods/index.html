@@ -1,113 +1,16 @@
-<!doctype html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta property="og:title" content="Ruby Number Methods">
-  <meta property="og:site_name" content="DAZ Codes">
-  <meta property="og:type" content="article">
-  <meta property="og:description" content="A summary of some nice methods for numbers in Ruby">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Ruby Number Methods">
-  <meta name="twitter:description" content="A summary of some nice methods for numbers in Ruby">
-  <meta property="article:author" content="DAZ">
-  <meta property="article:tag" content="rubymonkey">
-  <meta property="article:tag" content="javascript">
-  <meta property="article:tag" content="ruby">
-        <script
-            src="https://kit.fontawesome.com/6b5e91c70a.js"
-            crossorigin="anonymous"
-        ></script>
-        <title>DAZ Codes</title>
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
-<link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
-<link rel="preconnect" href="https://esm.sh" crossorigin>
-<link rel="dns-prefetch" href="https://esm.sh">
-<link rel="preload" href="/css/1-simple.css?v=1769276212630" as="style" />
-<link rel="preload" href="/css/2-custom.css?v=1769335773710" as="style" />
-<script type="module">import * as Turbo from 'https://esm.sh/@hotwired/turbo';</script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/monokai-sublime.min.css">
-<link rel="stylesheet" href="/css/1-simple.css?v=1769276212630" />
-<link rel="stylesheet" href="/css/2-custom.css?v=1769335773710" />
-
-</head>
-    <body>
-        <header class="sticky dropshadow">
-            <h1 class="logo text-center">
-                <a href="/" title="home"
-                    ><span class="daz">DAZ</span
-                    ><span class="codes mono-font">&lt;/codes&gt;</span></a
-                >
-            </h1>
-            <nav>
-                <a href="/blog" title="my blog">Blog</a>
-                <a href="/projects" title="my projects">Projects</a>
-                <a href="/books" title="my books">Books</a>
-            </nav>
-        </header>
-        <main class="container"><div><a class="swifty_breadcrumb" href="/">Home</a> &raquo; <a class="swifty_breadcrumb" href="/blog">Blog</a> &raquo; <a class="swifty_breadcrumb" href="/blog/ruby-number-methods">Ruby Number Methods</a></div>
-<h1 class="title brand-font gradient-text">Ruby Number Methods</h1>
-
-<div class="bold italic primary-text no-margin-y">
-    Written by <span class="secondary-text">DAZ</span> on Sun, 8 Jun 2025
-</div>
-
-<div class="tags"><a class="tag" href="/tags/rubymonkey">rubymonkey</a><a class="tag" href="/tags/javascript">javascript</a><a class="tag" href="/tags/ruby">ruby</a></div>
-
-<p>One of the biggest advantages of making the <a href="/projects/ruby-monkey">Ruby Monkey</a> library was going through all of the Ruby methods for numbers, strings, arrays and hashes. I learnt about so many methods I had no idea existed and discovered some really useful ones. In this post I&#39;m going to look at some of my favourites.</p>
-<h2><code>between?</code></h2>
-<p>This lets you check if a number is between 2 values inclusive.</p>
-<p>So instead of this:</p>
-<pre><code class="language-ruby">  n &gt;= 10 &amp;&amp; n &lt;= 20
-</code></pre>
-<p>You can just write:</p>
-<pre><code class="language-ruby">  n.between?(10,20)
+<!doctype html> <html lang="en"> <head> <meta charset="UTF-8"/> <meta name="viewport" content="width=device-width,initial-scale=1"/> <meta charset="UTF-8"/> <meta name="viewport" content="width=device-width,initial-scale=1"/> <meta property="og:title" content="Ruby Number Methods"> <meta property="og:site_name" content="DAZ Codes"> <meta property="og:url" content="https://daz.codes/blog/ruby-number-methods"> <meta property="og:type" content="article"> <meta property="og:description" content="A summary of some nice methods for numbers in Ruby"> <meta name="twitter:card" content="summary"> <meta name="twitter:title" content="Ruby Number Methods"> <meta name="twitter:description" content="A summary of some nice methods for numbers in Ruby"> <meta property="article:author" content="DAZ"> <meta property="article:tag" content="rubymonkey"> <meta property="article:tag" content="javascript"> <meta property="article:tag" content="ruby"> <script src="https://kit.fontawesome.com/6b5e91c70a.js" crossorigin="anonymous"></script> <title>DAZ Codes</title> <link rel="preload" href="/css/1-simple.css?v=1790282825424" as="style"/> <link rel="preload" href="/css/2-custom.css?v=1790282825424" as="style"/> <script type="module" src="/swifty/swifty-navigation.75c9422b1e.js" data-swifty-navigation data-target="main" data-prefetching="intent" data-cache-size="20" data-cache-ttl="15"></script> <link rel="stylesheet" href="/swifty/highlight-monokai-sublime.e0c1c5cd8d.css"> <link rel="stylesheet" href="/css/1-simple.css?v=1790282825424"/> <link rel="stylesheet" href="/css/2-custom.css?v=1790282825424"/> </head> <body> <header class="sticky dropshadow"> <h1 class="logo text-center"> <a href="/" title="home"><span class="daz">DAZ</span><span class="codes mono-font">&lt;/codes&gt;</span></a> </h1> <nav> <a href="/blog" title="my blog">Blog</a> <a href="/projects" title="my projects">Projects</a> <a href="/books" title="my books">Books</a> </nav> </header> <main class="container"><div><a class="swifty_breadcrumb" href="/">Home</a> &raquo; <a class="swifty_breadcrumb" href="/blog">Blog</a> &raquo; <a class="swifty_breadcrumb" href="/blog/ruby-number-methods">Ruby Number Methods</a></div> <h1 class="title brand-font gradient-text">Ruby Number Methods</h1> <div class="bold italic primary-text no-margin-y"> Written by <span class="secondary-text">DAZ</span> on Tue, 20 Jan 2026 </div> <div class="tags"><a class="tag" href="/tags/rubymonkey">rubymonkey</a><a class="tag" href="/tags/javascript">javascript</a><a class="tag" href="/tags/ruby">ruby</a></div> <p>One of the biggest advantages of making the <a href="/projects/ruby-monkey">Ruby Monkey</a> library was going through all of the Ruby methods for numbers, strings, arrays and hashes. I learnt about so many methods I had no idea existed and discovered some really useful ones. In this post I&#39;m going to look at some of my favourites.</p> <h2 id="between"><code>between?</code></h2> <p>This lets you check if a number is between 2 values inclusive.</p> <p>So instead of this:</p> <pre><code class="hljs language-ruby">  n &gt;= <span class="hljs-number">10</span> &amp;&amp; n &lt;= <span class="hljs-number">20</span>
+</code></pre><p>You can just write:</p> <pre><code class="hljs language-ruby">  n.between?(<span class="hljs-number">10</span>,<span class="hljs-number">20</span>)
   =&gt; true
-</code></pre>
-<h2><code>digits</code></h2>
-<p>This simply returns an array of the digits in the number, from smallest to largest.</p>
-<pre><code class="language-ruby">29.digits
-=&gt; [9,2]
-</code></pre>
-<h2><code>gcd</code> and <code>lcm</code></h2>
-<p>These stand for <em>greatest common divisor</em> and <em>lowest common multiple</em> respectively.</p>
-<p>The GCD of two (or more) numbers is the highest number that is a divisor (or factor) of all the numbers provided, so for example:</p>
-<pre><code class="language-ruby">8.gcd(12)
-=&gt; 4
-</code></pre>
-<p>This is because the common divisors of 8 and 12 are 1,2 and 4 ... and 4 is the highest.</p>
-<p>If two numbers are <em>coprime</em> then their GCD will be 1:</p>
-<pre><code class="language-ruby">12.gcd(25)
-=&gt; 1
-</code></pre>
-<p>The LCM of two numbers is the lowest number that is a multiple of them both, in the game FIZZ BUZZ this will be the first number you say FIZZ BUZZ on:</p>
-<pre><code class="language-ruby">3.lcm(5)
-=&gt; 15
-</code></pre>
-<p>When numbers are coprime the LCM is just the product of the two numbers, but it gets trickier when they have common factors:</p>
-<pre><code class="language-ruby">12.lcm(30)
-=&gt; 60
-</code></pre>
-<h2><code>ordinalize</code></h2>
-<p>This one is actually only in Rails as it&#39;s part of Active Support, but it&#39;s nice to use.</p>
-<p>This will just return a string with the correct suffix appended to the number, for example:</p>
-<pre><code class="language-ruby">1.ordinalize
-=&gt; &quot;1st&quot;
-</code></pre>
-<p>Always useful if you&#39;re dealing with positions etc.</p>
-
-</main>
-        <footer>
-            <p class="text-xs">
-                This site was made with
-                <a
-                    href="https://swifty-oo3v.onrender.com"
-                    title="Swifty, the super speedy static site generator"
-                    >Swifty</a
-                >, the super speedy static site generator &copy; DAZ 2026
-            </p>
-        </footer>
-    </body>
-</html>
+</code></pre><h2 id="digits"><code>digits</code></h2> <p>This simply returns an array of the digits in the number, from smallest to largest.</p> <pre><code class="hljs language-ruby"><span class="hljs-number">29</span>.digits
+=&gt; [<span class="hljs-number">9</span>,<span class="hljs-number">2</span>]
+</code></pre><h2 id="gcd-and-lcm"><code>gcd</code> and <code>lcm</code></h2> <p>These stand for <em>greatest common divisor</em> and <em>lowest common multiple</em> respectively.</p> <p>The GCD of two (or more) numbers is the highest number that is a divisor (or factor) of all the numbers provided, so for example:</p> <pre><code class="hljs language-ruby"><span class="hljs-number">8</span>.gcd(<span class="hljs-number">12</span>)
+=&gt; <span class="hljs-number">4</span>
+</code></pre><p>This is because the common divisors of 8 and 12 are 1,2 and 4 ... and 4 is the highest.</p> <p>If two numbers are <em>coprime</em> then their GCD will be 1:</p> <pre><code class="hljs language-ruby"><span class="hljs-number">12</span>.gcd(<span class="hljs-number">25</span>)
+=&gt; <span class="hljs-number">1</span>
+</code></pre><p>The LCM of two numbers is the lowest number that is a multiple of them both, in the game FIZZ BUZZ this will be the first number you say FIZZ BUZZ on:</p> <pre><code class="hljs language-ruby"><span class="hljs-number">3</span>.lcm(<span class="hljs-number">5</span>)
+=&gt; <span class="hljs-number">15</span>
+</code></pre><p>When numbers are coprime the LCM is just the product of the two numbers, but it gets trickier when they have common factors:</p> <pre><code class="hljs language-ruby"><span class="hljs-number">12</span>.lcm(<span class="hljs-number">30</span>)
+=&gt; <span class="hljs-number">60</span>
+</code></pre><h2 id="ordinalize"><code>ordinalize</code></h2> <p>This one is actually only in Rails as it&#39;s part of Active Support, but it&#39;s nice to use.</p> <p>This will just return a string with the correct suffix appended to the number, for example:</p> <pre><code class="hljs language-ruby"><span class="hljs-number">1</span>.ordinalize
+=&gt; <span class="hljs-string">&quot;1st&quot;</span>
+</code></pre><p>Always useful if you&#39;re dealing with positions etc.</p> </main> <footer> <p class="text-xs"> This site was made with <a href="https://swifty-oo3v.onrender.com" title="Swifty, the super speedy static site generator">Swifty</a>, the super speedy static site generator &copy; DAZ 2026 </p> </footer> </body> </html> 

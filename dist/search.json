@@ -1,0 +1,167 @@
+{
+  "version": 1,
+  "pages": [
+    {
+      "title": "Home",
+      "url": "/",
+      "summary": "making code dazzle",
+      "content": "making code dazzle 👋 HEY! I'm Daz and I 💜 coding! I'm a software developer at Yozu where I use Ruby on Rails , but I also enjoy coding in JavaScript and Elixir 👨🏼‍💻 Here are some of my projects 📚 And here are some books I wrote 📝 I also write a blog and articles You can see my code on GitHub Connect with me on LinkedIn",
+      "tags": []
+    },
+    {
+      "title": "Advent of Code 2025",
+      "url": "/blog/advent-of-code-2025",
+      "summary": "My thoughts on the Advent of Code challenges at the end of last year",
+      "content": "This was the second time I've taken part in the Advent of Code challenge. Last year I achieved 42/50 of the stars available. The 2025 Advent of Code changed the format a little bit from the year before. There were only 12 days of challenges rather than the usual 25. These took place from December 1st to December 12th, so there was still one every day and it was a tough pace to keep up with. Each day still had a part a (usually quite easy) and part b (harder with varying degrees of difficulty), with a star awarded for completing each part, making a total of 24 stars available this year. I liked this new format - it has a nice link to the Twelve Days of Christmas and made it much more manageable to keep up with the challenges. It also meant there was more time to complete any unfinished challenges in the weeks before Christmas This year I decided to use Ruby Monkey to complete the challenges. I used JavaScript last year, but did some in Ruby and found that Ruby had some really nice methods that helped make solving the challenge easier and more enjoyable. In fact this was one of the reasons I decided to make Ruby Monkey. Completing this challenges using the library would show that it was able to be used to write real code. For example this was some of the code I used for the Day 12 challenge: const day12 = data => { const regions = data. trim (). split ( \"\\n\" ) return regions. count ( region => { const [dimensions,presents] = region. split ( \": \" ) const area = dimensions. split ( \"x\" ). map ($ `to_i` ). inject ( ( P,n ) => P*n) const result = presents. split ( \" \" ). map ($ `to_i` ). map ( ( n,i ) => n * 7 ). sum return result < area }) } This uses my template to func function to pass each element in the dimensions and presents arrays to the to_i method to convert an a number string to type Number (so \"24\" will become 42 ). It also uses the count Array method, which is much more intuitive than using reduce with some unitelligable logic or using a for loop with imperative code. Speak of reduce , I've also used inject which is just an alias for reduce and also used the sum method to find the total of all the results. Overall I just feel that this makes the code look nicer as well as being much easier to work with. A big win for Ruby Monkey! The actual challenges were a good standard. I usually managed to get part A smushed within an hour of looking at it in the morning and then would usually spend the rest of the day on part B. I'd often have to think about it then try some ideas out before finally getting a solution that worked. A frustrating situation is when your code works for the example data given, but not for the actual challenge data, usually due to some edge cases. Then suddenly on Days 9 and 10, the level of challenged increased exponentially! Part B for both days was ridiculously hard! I quickly realised that on Day 9 I could reduce the problem down to simultaneous equations but didn't count on there being free variables and needing to implement my own row reduciton and Gaussian elimination functions. It took a long time to get right, especially having to ensure that only positive integers were used, but I was really pleased when I finally got this right. Day 10 also called for some maths. I needed to implement a function that used ray casting to check if a point was inside a shape or not, but there were so many edge cases and I hadn't counted on the strange way the shapes could be constructed. I eventually got something working with the test data but couldn't get it to solve the actual problem. In the end I was grateful for numerous Reddit posts that gave more sample data to highlight the edge cases. I wasn't as pleased with my solution to this, it seemed a bit hacky, but this was the second to last problem I needed to solve and by that point I just wanted to get it finished. The last challenge that needed to be solved was part B on the last day. This is actually the easiest to solve as it just requires you to have solved all the other challenges and then click on a link to get the star. This meant that I got all the stars for the first time! The devs at Yozu have a leaderboard for Advent of code every year and it can get really competitive (well I do anyway!) I love trying to be the first to solve the challenge that day and would get up early each day to try and be the first to get both stars! In the end I managed to finish at the top of tbe table which I was really pleased about given how talented all the devs at Yozu are. Hopefully I'll be able to keep up my form next year as well!",
+      "tags": [
+        "rubymonkey",
+        "javascript",
+        "ruby",
+        "adventofcode",
+        "aoc"
+      ]
+    },
+    {
+      "title": "How I Changed To A Career In Software Development",
+      "url": "/blog/career-change",
+      "summary": "Some information about changing career, including my top 5 tips for getting a job in software development.",
+      "content": "At the start of 2024 I decided to change careers. After over 20 years teaching maths and computer science I decided to turn my passion into a profession and become a software developer. I had always loved coding and enjoyed teaching it, but was finding my hobby more fun than my day job and wanted to do it full time. And it turned out to be a great decision. I'm nearly a year into my first role as a Rails developer and have loved every minute of it! It wasn't completely straightforward though ... the job market is very competitive and I needed to give my resume a full rewrite! I also needed to work on my LinkedIn profile. At first it was hard to get noticed - I had zero experience and couldn't even get an interview! It's that classic problem of how do you get any experience when even junior developer roles are asking for you to be proficient in over a dozen technologies? The many rejections were disheartening at times, but I just kept plugging away and spent every day working on my coding skills. Recruiters get a bad rap at times and I had my fair share of some that wasted my time, but there were also some that were really helpful in opening doors and helping me apply to companies. One of them mentioned that I should put more focus on the fact that I could program in Ruby and use Rails. Once I did this I started to get more traction and landed a role soon after. Focusing on a particular skill really helped, especially one where there was some demand. I joined the local Ruby User Group which really helped with networking. All the people there were really welcoming and gave me lots of helpful advice, including some hands on coding experience. My top 5 tips for anyone looking to change careers or find a software development job are: Get your CV in order and write a compelling cover letter that tells your story Work on projects to help develop your skills and build a portfolio Join groups and network actively Utilise recruiters and target specific jobs rather than generic applications Don't give up! The rejections can get you down, but keep going and you'll find something",
+      "tags": [
+        "career",
+        "web development",
+        "ruby",
+        "rails"
+      ]
+    },
+    {
+      "title": "Ruby Number Methods",
+      "url": "/blog/ruby-number-methods",
+      "summary": "A summary of some nice methods for numbers in Ruby",
+      "content": "One of the biggest advantages of making the Ruby Monkey library was going through all of the Ruby methods for numbers, strings, arrays and hashes. I learnt about so many methods I had no idea existed and discovered some really useful ones. In this post I'm going to look at some of my favourites. between? This lets you check if a number is between 2 values inclusive. So instead of this: n >= 10 && n <= 20 You can just write: n.between?( 10 , 20 ) => true digits This simply returns an array of the digits in the number, from smallest to largest. 29 .digits => [ 9 , 2 ] gcd and lcm These stand for greatest common divisor and lowest common multiple respectively. The GCD of two (or more) numbers is the highest number that is a divisor (or factor) of all the numbers provided, so for example: 8 .gcd( 12 ) => 4 This is because the common divisors of 8 and 12 are 1,2 and 4 ... and 4 is the highest. If two numbers are coprime then their GCD will be 1: 12 .gcd( 25 ) => 1 The LCM of two numbers is the lowest number that is a multiple of them both, in the game FIZZ BUZZ this will be the first number you say FIZZ BUZZ on: 3 .lcm( 5 ) => 15 When numbers are coprime the LCM is just the product of the two numbers, but it gets trickier when they have common factors: 12 .lcm( 30 ) => 60 ordinalize This one is actually only in Rails as it's part of Active Support, but it's nice to use. This will just return a string with the correct suffix appended to the number, for example: 1 .ordinalize => \"1st\" Always useful if you're dealing with positions etc.",
+      "tags": [
+        "rubymonkey",
+        "javascript",
+        "ruby"
+      ]
+    },
+    {
+      "title": "Template to Func",
+      "url": "/blog/template-to-func",
+      "summary": "A neat little helper function that mimics the Symbol to Proc method in Ruby",
+      "content": "Yesterday at work, somebody posted this JavaScript snippet, saying they liked how the some method worked: const anyChecked = filterTargets. some ( filter => filter. checked ) Someone replied, saying they preferred how to do it in Ruby: any_checked = filter_targets.any?(& :checked ) I had already implemented the any in my Ruby Monkey library, but I also like the way you can use the symbol to proc shorthand notation in Ruby to automatically call a method on each element passed to it. Interesting fact that this was originally a Rails method that was then merged into Ruby core as it proved so useful. It does seems a lot of needless code writing filter => filter.checked when all you want to do is apply a method to each element in the array. JavaScript already allows you to use a point free style where you can just provide the name of a function and each element in the array will be passed to it, so we could do this: const filterChecker = filter => filter. checked const anyChecked = filterTargets. some (filterChecker) But in this case, we have just shifted the problem to defining a trivial function, filterChecker , that simply calls a method on the object provided to it. The problem arises if you are doing a lot of OOP style coding, then you will often be calling methods on objects rather than top-level functions. I wondered if it was possible to implement something similar to Ruby's symbol to proc in Ruby Monkey. My first effort looked like this: const sym_to_proc = method => obj => obj[method] This is a curried function that uses partial application to return another function that can then be passed as a callback to the array method. This means you coudl write this: const anyChecked = filterTargets. some ( sym_to_proc ( \"checked\" )) This looks a bit messy though ... the Ruby version uses the ampersand to start the call and it's just followed by a symbol. Having to use the extra parentheses to call the function is also messy. So I got creative ... JavaScript doesn't have symbols, but it does have template literals , and they don't require parentheses when you call a function with them as the argument ( tag functions ). Unfortunately you can't use an ampersand for a function name, but as jQuery showed, you can use $ , so I rewrote the function as this: const $ = method => obj => obj[method] Now we can call it like this: const anyChecked = filterTargets. some ($ `checked` ) ... which, while not exactly the same, is much closer to the Ruby version. So I added it to an updated version of Ruby Monkey, so now you can write this: const anyChecked = filter_targets. any ($ `checked` ) I'm not sure how much it would get used, but it was fun to implement and is more useful when using Ruby Doo, which adds a lot more methods to JavaScript objects. I like the fact it uses tag template functions in a creative way and the use of the $ is similar to the way it's used in template literal interpolation . And I decided to call it Template to Func , in honour of the Ruby method that inspired it, since it uses template literals instead of symbols and functinos instead of procs.",
+      "tags": [
+        "rubymonkey",
+        "javascript",
+        "ruby"
+      ]
+    },
+    {
+      "title": "Javascript Novice To Ninja",
+      "url": "/books/javascript-novice-to-ninja",
+      "summary": "A fun, practical, and comprehensive guide to the modern usage of programming language of the web. From the basics of programming, to events, DOM manipulation and animations.",
+      "content": "JavaScript is a must-have skill for all web developers. JavaScript: Novice to Ninja is a fun, practical, and comprehensive guide to the modern usage of this deceptively powerful language. Updated to cover ECMAScript 6 and modern JavaScript development, the second edition of this step-by-step introduction to coding in JavaScript will show you how to to solve real-world problems, design eye-catching animations, build smarter forms, and develop rich applications. Order on Amazon",
+      "tags": [
+        "books",
+        "javascript"
+      ]
+    },
+    {
+      "title": "Jump Start Sinatra",
+      "url": "/books/jump-start-sinatra",
+      "summary": "A short introduction to Sinatra, the micro Ruby framework. A full tutorial that takes you through building a full example project with a database backend to help demonstrate the concepts in a practical way.",
+      "content": "This short SitePoint book provides readers with a fun and yet practical introduction to Sinatra, a framework that makes web development with Ruby extremely simple. The book is built around building a real-life example project in a fun and easily understandable and practical way. This is a clear, approachable and very easy-to-follow book that will get you to to speed with Sinatra in no time. Order on Amazon",
+      "tags": [
+        "ruby",
+        "sinatra",
+        "books"
+      ]
+    },
+    {
+      "title": "Learn To Code With Javascript",
+      "url": "/books/learn-to-code-with-javascript",
+      "summary": "The perfect place to learn how to code using the most popular programming language on Earth! Starts from the very beginning and builds up with lots of practical examples, finsihing with a fully working game!",
+      "content": "This easy-to-follow, practical, and fun guide is the perfect place to start on your coding journey. You'll be learning to program with JavaScript - the most popular programming language on Earth. And it runs in web browsers, making it particularly suited to creating web-based apps and games. But the principles and techniques that you'll learn will provide you with a foundation to go on and learn many other languages, too. Order on Amazon",
+      "tags": [
+        "javascript",
+        "coding",
+        "books"
+      ]
+    },
+    {
+      "title": "Authentication With Registration Generator Gem",
+      "url": "/projects/authentication-with-registration",
+      "summary": "Adds registration pages and some extra methods to the built-in authentication generator.",
+      "content": "source code After giving a talk on the new Authentication Generator in Rails 8 and how to add registration pages, I wrapped up my code into a Ruby Gem (my first one!) It was interesting to learn how to build a Ruby Gem and how generators in Rails work (they're really cool, I should use them more!)",
+      "tags": [
+        "ruby",
+        "rails",
+        "authentication"
+      ]
+    },
+    {
+      "title": "Fruit & Veg Cipher",
+      "url": "/projects/fruit-and-veg-cipher",
+      "summary": "A fun game - break the secret code.",
+      "content": "source code A code breaking game that uses a grid cipher to create a daily puzzle. You can try playing it here",
+      "tags": [
+        "cipher",
+        "game",
+        "javascript"
+      ]
+    },
+    {
+      "title": "Helium",
+      "url": "/projects/helium",
+      "summary": "A tiny library that makes HTML interactive. It was inspired by AlpineJS and HTMX and does most of what they do but with a much smaller footprint. Also a drop-in lighter and more feature-rich replacement for Stimulus.",
+      "content": "Source Code Helium is an ultra-light library that makes HTML interactive! Here's a simple example of a button that counts the number of times it has been clicked and turns red after more than 3 clicks: < button @ click = \"count++\" :style = \"count > 3 && 'background: red'\" > clicked < b @ text = \"count\" > 0 </ b > times </ button > It's really simple to use - just sprinkle the magic @attributes into your HTML and watch it come alive! Why Helium? Helium is designed for developers who want: Lightweight - Just over 3KB minified and gzipped Powerful - Declarative JavaScript in your HTML Zero build step - Works directly in the browser with no compiling Easy to learn - If you know HTML and basic JavaScript, you're ready",
+      "tags": [
+        "projects",
+        "javascript",
+        "helium"
+      ]
+    },
+    {
+      "title": "Nanny State",
+      "url": "/projects/nanny-state",
+      "summary": "A tiny state library for building reactive UI.",
+      "content": "source code NANNY STATE is a small reactive state library that makes it simple to build speedy web apps. It does everything React does, but without the build process, JSX or a virtual DOM ... and it's a fraction of the size! SMALL - less than 4kb minified and zipped SIMPLE - a single state object with some useful helper methods SPEEDY - automatic page renders that are blazingly fast It uses a purely declarative notation and everything is written in Vanilla JS and HTML. To get started, just set the initial state and write the view - check out the example below: // A single import is all that's needed import Nanny from \"nanny-state\" // View is a tag function that accepts the state as a parameter and returns plain old HTML const View = state => state. HTML ` <h1>❤️ ${state.count} </h1> <div> <button onclick= ${event => state.Decrement( \"count\" )} >👎</button> <button onclick= ${event => state.Increment( \"count\" )} >👍</button> </div>` // the initial State is just a plain old object const State = { count : 0 , View } // Start the Nanny State! Nanny ( State )",
+      "tags": [
+        "state",
+        "javascript",
+        "projects"
+      ]
+    },
+    {
+      "title": "PR!OR!TY!",
+      "url": "/projects/priority",
+      "summary": "A simple task manager to help you focus on what's important.",
+      "content": "source code This is a Rails project, built using Rails 8. It allows you to create tasks in one big list and sort it by priority. You can snooze any tasks you don't want to think about at the moment and then go into PR!OR!TY! mode and focus on your top 3 tasks. Sign up and give it a try here !",
+      "tags": [
+        "priority",
+        "tasks"
+      ]
+    },
+    {
+      "title": "Ruby Monkey",
+      "url": "/projects/ruby-monkey",
+      "summary": "A small utility library that helps make JavaScript do more Ruby. Adds all your favourite Ruby methods to Strings, Numbers, Arrays, Objects and Dates!",
+      "content": "source code Unashamedly monkey patching JS numbers, strings, arrays and objects with Ruby methods. Ruby Doo was born out of my love for Ruby and frustration with JavaScript’s limited native methods. So I built my own utility library — not just as a fix, but as a fun way to bring Ruby’s elegance to the browser. Ruby Dooby Doo! Ruby has loads of really nice methods, now you can use them in JS as well! Write code like: [ 1 , 2 , 3 ]. last // 3 [ 1 , 2 , 3 ]. count // 3 ( 21 ). ordinalize // \"21st\" \"JavaScript\" . reverse //m \"tpircSavaJ\" [ 1 , 2 , 3 ]. sum . squared // 9 [ \"A\" , \"A\" , \"C\" , \"A\" , \"B\" , \"A\" , \"B\" ]. tally // {\"A\": 4, \"C\": 1, \"B\": 2}",
+      "tags": [
+        "ruby",
+        "javascript",
+        "rubymonkey",
+        "projects"
+      ]
+    },
+    {
+      "title": "Swifty",
+      "url": "/projects/swifty",
+      "summary": "A static site generator that uses Turbo to make a page navigation almost instant.",
+      "content": "source code A static site generator that uses Turbo to make a page navigation almost instant. It’s perfect for building personal or small business sites and can also be used to create a simple blog. In fact, this site is built using Swifty! I was inspired by a talk at Haggis Ruby about Bridgetown and have also utilized the Rails concept of convention over configuration in its design (for example if a layout has the same name as a directory then all pages in that directory will get that layout).",
+      "tags": [
+        "swifty",
+        "projects"
+      ]
+    }
+  ]
+}

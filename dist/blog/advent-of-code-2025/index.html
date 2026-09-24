@@ -1,96 +1,10 @@
-<!doctype html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta property="og:title" content="Advent of Code 2025">
-  <meta property="og:site_name" content="DAZ Codes">
-  <meta property="og:type" content="article">
-  <meta property="og:description" content="My thoughts on the Advent of Code challenges at the end of last year">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Advent of Code 2025">
-  <meta name="twitter:description" content="My thoughts on the Advent of Code challenges at the end of last year">
-  <meta property="article:author" content="DAZ">
-  <meta property="article:published_time" content="2026-01-25T00:00:00.000Z">
-  <meta property="article:tag" content="rubymonkey">
-  <meta property="article:tag" content="javascript">
-  <meta property="article:tag" content="ruby">
-  <meta property="article:tag" content="adventofcode">
-  <meta property="article:tag" content="aoc">
-        <script
-            src="https://kit.fontawesome.com/6b5e91c70a.js"
-            crossorigin="anonymous"
-        ></script>
-        <title>DAZ Codes</title>
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
-<link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
-<link rel="preconnect" href="https://esm.sh" crossorigin>
-<link rel="dns-prefetch" href="https://esm.sh">
-<link rel="preload" href="/css/1-simple.css?v=1769276212630" as="style" />
-<link rel="preload" href="/css/2-custom.css?v=1769335773710" as="style" />
-<script type="module">import * as Turbo from 'https://esm.sh/@hotwired/turbo';</script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/monokai-sublime.min.css">
-<link rel="stylesheet" href="/css/1-simple.css?v=1769276212630" />
-<link rel="stylesheet" href="/css/2-custom.css?v=1769335773710" />
-
-</head>
-    <body>
-        <header class="sticky dropshadow">
-            <h1 class="logo text-center">
-                <a href="/" title="home"
-                    ><span class="daz">DAZ</span
-                    ><span class="codes mono-font">&lt;/codes&gt;</span></a
-                >
-            </h1>
-            <nav>
-                <a href="/blog" title="my blog">Blog</a>
-                <a href="/projects" title="my projects">Projects</a>
-                <a href="/books" title="my books">Books</a>
-            </nav>
-        </header>
-        <main class="container"><div><a class="swifty_breadcrumb" href="/">Home</a> &raquo; <a class="swifty_breadcrumb" href="/blog">Blog</a> &raquo; <a class="swifty_breadcrumb" href="/blog/advent-of-code-2025">Advent Of Code 2025</a></div>
-<h1 class="title brand-font gradient-text">Advent of Code 2025</h1>
-
-<div class="bold italic primary-text no-margin-y">
-    Written by <span class="secondary-text">DAZ</span> on Sun, 25 Jan 2026
-</div>
-
-<div class="tags"><a class="tag" href="/tags/rubymonkey">rubymonkey</a><a class="tag" href="/tags/javascript">javascript</a><a class="tag" href="/tags/ruby">ruby</a><a class="tag" href="/tags/adventofcode">adventofcode</a><a class="tag" href="/tags/aoc">aoc</a></div>
-
-<p>This was the second time I&#39;ve taken part in the Advent of Code challenge. Last year I achieved 42/50 of the stars available.</p>
-<p>The 2025 Advent of Code changed the format a little bit from the year before. There were only 12 days of challenges rather than the usual 25. These took place from December 1st to December 12th, so there was still one every day and it was a tough pace to keep up with. Each day still had a part a (usually quite easy) and part b (harder with varying degrees of difficulty), with a star awarded for completing each part, making a total of 24 stars available this year.</p>
-<p>I liked this new format - it has a nice link to the Twelve Days of Christmas and made it much more manageable to keep up with the challenges. It also meant there was more time to complete any unfinished challenges in the weeks before Christmas</p>
-<p>This year I decided to use Ruby Monkey to complete the challenges. I used JavaScript last year, but did some in Ruby and found that Ruby had some really nice methods that helped make solving the challenge easier and more enjoyable. In fact this was one of the reasons I decided to make Ruby Monkey. Completing this challenges using the library would show that it was able to be used to write real code.</p>
-<p>For example this was some of the code I used for the Day 12 challenge:</p>
-<pre><code class="language-javascript">const day12 = data =&gt; {
-  const regions = data.trim().split(&quot;\n&quot;)
-  return regions.count(region =&gt; {
-    const [dimensions,presents] = region.split(&quot;: &quot;)
-    const area = dimensions.split(&quot;x&quot;).map($`to_i`).inject((P,n) =&gt; P*n)
-    const result = presents.split(&quot; &quot;).map($`to_i`).map((n,i) =&gt; n * 7).sum
-    return result &lt; area
+<!doctype html> <html lang="en"> <head> <meta charset="UTF-8"/> <meta name="viewport" content="width=device-width,initial-scale=1"/> <meta charset="UTF-8"/> <meta name="viewport" content="width=device-width,initial-scale=1"/> <meta property="og:title" content="Advent of Code 2025"> <meta property="og:site_name" content="DAZ Codes"> <meta property="og:url" content="https://daz.codes/blog/advent-of-code-2025"> <meta property="og:type" content="article"> <meta property="og:description" content="My thoughts on the Advent of Code challenges at the end of last year"> <meta name="twitter:card" content="summary"> <meta name="twitter:title" content="Advent of Code 2025"> <meta name="twitter:description" content="My thoughts on the Advent of Code challenges at the end of last year"> <meta property="article:author" content="DAZ"> <meta property="article:published_time" content="2026-01-25T00:00:00.000Z"> <meta property="article:tag" content="rubymonkey"> <meta property="article:tag" content="javascript"> <meta property="article:tag" content="ruby"> <meta property="article:tag" content="adventofcode"> <meta property="article:tag" content="aoc"> <script src="https://kit.fontawesome.com/6b5e91c70a.js" crossorigin="anonymous"></script> <title>DAZ Codes</title> <link rel="preload" href="/css/1-simple.css?v=1790282825424" as="style"/> <link rel="preload" href="/css/2-custom.css?v=1790282825424" as="style"/> <script type="module" src="/swifty/swifty-navigation.75c9422b1e.js" data-swifty-navigation data-target="main" data-prefetching="intent" data-cache-size="20" data-cache-ttl="15"></script> <link rel="stylesheet" href="/swifty/highlight-monokai-sublime.e0c1c5cd8d.css"> <link rel="stylesheet" href="/css/1-simple.css?v=1790282825424"/> <link rel="stylesheet" href="/css/2-custom.css?v=1790282825424"/> </head> <body> <header class="sticky dropshadow"> <h1 class="logo text-center"> <a href="/" title="home"><span class="daz">DAZ</span><span class="codes mono-font">&lt;/codes&gt;</span></a> </h1> <nav> <a href="/blog" title="my blog">Blog</a> <a href="/projects" title="my projects">Projects</a> <a href="/books" title="my books">Books</a> </nav> </header> <main class="container"><div><a class="swifty_breadcrumb" href="/">Home</a> &raquo; <a class="swifty_breadcrumb" href="/blog">Blog</a> &raquo; <a class="swifty_breadcrumb" href="/blog/advent-of-code-2025">Advent of Code 2025</a></div> <h1 class="title brand-font gradient-text">Advent of Code 2025</h1> <div class="bold italic primary-text no-margin-y"> Written by <span class="secondary-text">DAZ</span> on Sun, 25 Jan 2026 </div> <div class="tags"><a class="tag" href="/tags/rubymonkey">rubymonkey</a><a class="tag" href="/tags/javascript">javascript</a><a class="tag" href="/tags/ruby">ruby</a><a class="tag" href="/tags/adventofcode">adventofcode</a><a class="tag" href="/tags/aoc">aoc</a></div> <p>This was the second time I&#39;ve taken part in the Advent of Code challenge. Last year I achieved 42/50 of the stars available.</p> <p>The 2025 Advent of Code changed the format a little bit from the year before. There were only 12 days of challenges rather than the usual 25. These took place from December 1st to December 12th, so there was still one every day and it was a tough pace to keep up with. Each day still had a part a (usually quite easy) and part b (harder with varying degrees of difficulty), with a star awarded for completing each part, making a total of 24 stars available this year.</p> <p>I liked this new format - it has a nice link to the Twelve Days of Christmas and made it much more manageable to keep up with the challenges. It also meant there was more time to complete any unfinished challenges in the weeks before Christmas</p> <p>This year I decided to use Ruby Monkey to complete the challenges. I used JavaScript last year, but did some in Ruby and found that Ruby had some really nice methods that helped make solving the challenge easier and more enjoyable. In fact this was one of the reasons I decided to make Ruby Monkey. Completing this challenges using the library would show that it was able to be used to write real code.</p> <p>For example this was some of the code I used for the Day 12 challenge:</p> <pre><code class="hljs language-javascript"><span class="hljs-keyword">const</span> <span class="hljs-title function_">day12</span> = data =&gt; {
+  <span class="hljs-keyword">const</span> regions = data.<span class="hljs-title function_">trim</span>().<span class="hljs-title function_">split</span>(<span class="hljs-string">&quot;\n&quot;</span>)
+  <span class="hljs-keyword">return</span> regions.<span class="hljs-title function_">count</span>(<span class="hljs-function"><span class="hljs-params">region</span> =&gt;</span> {
+    <span class="hljs-keyword">const</span> [dimensions,presents] = region.<span class="hljs-title function_">split</span>(<span class="hljs-string">&quot;: &quot;</span>)
+    <span class="hljs-keyword">const</span> area = dimensions.<span class="hljs-title function_">split</span>(<span class="hljs-string">&quot;x&quot;</span>).<span class="hljs-title function_">map</span>($<span class="hljs-string">`to_i`</span>).<span class="hljs-title function_">inject</span>(<span class="hljs-function">(<span class="hljs-params">P,n</span>) =&gt;</span> P*n)
+    <span class="hljs-keyword">const</span> result = presents.<span class="hljs-title function_">split</span>(<span class="hljs-string">&quot; &quot;</span>).<span class="hljs-title function_">map</span>($<span class="hljs-string">`to_i`</span>).<span class="hljs-title function_">map</span>(<span class="hljs-function">(<span class="hljs-params">n,i</span>) =&gt;</span> n * <span class="hljs-number">7</span>).<span class="hljs-property">sum</span>
+    <span class="hljs-keyword">return</span> result &lt; area
   })
 }
-</code></pre>
-<p>This uses my <a href="/blog/template-to-func">template to func</a> function to pass each element in the <code>dimensions</code> and <code>presents</code> arrays to the<code>to_i</code> method to convert an a number string to type <code>Number</code> (so &quot;24&quot; will become <code>42</code>). It also uses the <code>count</code> Array method, which is much more intuitive than using <code>reduce</code> with some unitelligable logic or using a <code>for</code> loop with imperative code. Speak of <code>reduce</code>, I&#39;ve also used <code>inject</code> which is just an alias for <code>reduce</code> and also used the <code>sum</code> method to find the total of all the results.</p>
-<p>Overall I just feel that this makes the code look nicer as well as being much easier to work with. A big win for Ruby Monkey!</p>
-<p>The actual challenges were a good standard. I usually managed to get part A smushed within an hour of looking at it in the morning and then would usually spend the rest of the day on part B. I&#39;d often have to think about it then try some ideas out before finally getting a solution that worked. A frustrating situation is when your code works for the example data given, but not for the actual challenge data, usually due to some edge cases.</p>
-<p>Then suddenly on Days 9 and 10, the level of challenged increased exponentially! Part B for both days was ridiculously hard! I quickly realised that on Day 9 I could reduce the problem down to simultaneous equations but didn&#39;t count on there being free variables and needing to implement my own row reduciton and Gaussian elimination functions. It took a long time to get right, especially having to ensure that only positive integers were used, but I was really pleased when I finally got this right. Day 10 also called for some maths. I needed to implement a function that used ray casting to check if a point was inside a shape or not, but there were so many edge cases and I hadn&#39;t counted on the strange way the shapes could be constructed. I eventually got something working with the test data but couldn&#39;t get it to solve the actual problem. In the end I was grateful for numerous Reddit posts that gave more sample data to highlight the edge cases. I wasn&#39;t as pleased with my solution to this, it seemed a bit hacky, but this was the second to last problem I needed to solve and by that point I just wanted to get it finished.</p>
-<p>The last challenge that needed to be solved was part B on the last day. This is actually the easiest to solve as it just requires you to have solved all the other challenges and then click on a link to get the star. This meant that I got all the stars for the first time!</p>
-<p>The devs at <a href="https://yozu.co.uk">Yozu</a> have a leaderboard for Advent of code every year and it can get really competitive (well I do anyway!) I love trying to be the first to solve the challenge that day and would get up early each day to try and be the first to get both stars! In the end I managed to finish at the top of tbe table which I was really pleased about given how talented all the devs at Yozu are. Hopefully I&#39;ll be able to keep up my form next year as well!</p>
-
-</main>
-        <footer>
-            <p class="text-xs">
-                This site was made with
-                <a
-                    href="https://swifty-oo3v.onrender.com"
-                    title="Swifty, the super speedy static site generator"
-                    >Swifty</a
-                >, the super speedy static site generator &copy; DAZ 2026
-            </p>
-        </footer>
-    </body>
-</html>
+</code></pre><p>This uses my <a href="/blog/template-to-func">template to func</a> function to pass each element in the <code>dimensions</code> and <code>presents</code> arrays to the<code>to_i</code> method to convert an a number string to type <code>Number</code> (so &quot;24&quot; will become <code>42</code>). It also uses the <code>count</code> Array method, which is much more intuitive than using <code>reduce</code> with some unitelligable logic or using a <code>for</code> loop with imperative code. Speak of <code>reduce</code>, I&#39;ve also used <code>inject</code> which is just an alias for <code>reduce</code> and also used the <code>sum</code> method to find the total of all the results.</p> <p>Overall I just feel that this makes the code look nicer as well as being much easier to work with. A big win for Ruby Monkey!</p> <p>The actual challenges were a good standard. I usually managed to get part A smushed within an hour of looking at it in the morning and then would usually spend the rest of the day on part B. I&#39;d often have to think about it then try some ideas out before finally getting a solution that worked. A frustrating situation is when your code works for the example data given, but not for the actual challenge data, usually due to some edge cases.</p> <p>Then suddenly on Days 9 and 10, the level of challenged increased exponentially! Part B for both days was ridiculously hard! I quickly realised that on Day 9 I could reduce the problem down to simultaneous equations but didn&#39;t count on there being free variables and needing to implement my own row reduciton and Gaussian elimination functions. It took a long time to get right, especially having to ensure that only positive integers were used, but I was really pleased when I finally got this right. Day 10 also called for some maths. I needed to implement a function that used ray casting to check if a point was inside a shape or not, but there were so many edge cases and I hadn&#39;t counted on the strange way the shapes could be constructed. I eventually got something working with the test data but couldn&#39;t get it to solve the actual problem. In the end I was grateful for numerous Reddit posts that gave more sample data to highlight the edge cases. I wasn&#39;t as pleased with my solution to this, it seemed a bit hacky, but this was the second to last problem I needed to solve and by that point I just wanted to get it finished.</p> <p>The last challenge that needed to be solved was part B on the last day. This is actually the easiest to solve as it just requires you to have solved all the other challenges and then click on a link to get the star. This meant that I got all the stars for the first time!</p> <p>The devs at <a href="https://yozu.co.uk">Yozu</a> have a leaderboard for Advent of code every year and it can get really competitive (well I do anyway!) I love trying to be the first to solve the challenge that day and would get up early each day to try and be the first to get both stars! In the end I managed to finish at the top of tbe table which I was really pleased about given how talented all the devs at Yozu are. Hopefully I&#39;ll be able to keep up my form next year as well!</p> </main> <footer> <p class="text-xs"> This site was made with <a href="https://swifty-oo3v.onrender.com" title="Swifty, the super speedy static site generator">Swifty</a>, the super speedy static site generator &copy; DAZ 2026 </p> </footer> </body> </html> 
