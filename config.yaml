@@ -1,11 +1,13 @@
 sitename: DAZ Codes
+site_url: https://daz.codes
 breadcrumb_separator: "&raquo;"
 breadcrumb_class: swifty_breadcrumb
 link_class: swifty_link
 tag_class: tag
 max_image_size: 800
 default_link_name: links
-turbo: true
+morphing: true
+prefetching: true
 
 dateFormat:
   weekday: short
